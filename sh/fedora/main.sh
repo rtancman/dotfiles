@@ -4,6 +4,8 @@ dnf update -y;
 # . sh/fedora/scripts/git.sh ;
 # . sh/fedora/scripts/sublimetext3.sh ;
 # . sh/fedora/scripts/docker.sh ;
+. sh/fedora/scripts/pip.sh ;
+. sh/fedora/scripts/docker-compose.sh ;
 # . sh/fedora/scripts/skype.sh ;
 # . sh/fedora/scripts/chrome.sh ;
 
