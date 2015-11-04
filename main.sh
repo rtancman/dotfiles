@@ -22,11 +22,11 @@ else
 	osrelease="$(cat /etc/*-release)"
 
 	if [[ ${osrelease} =~ 'Fedora' ]]; then
-	       . sh/fedora/main.sh;
+        . sh/fedora/main.sh;
 	elif [[ ${osrelease} =~ 'Debian' ]]; then
-	        echo "Debian ;)" ;
+        . sh/debian/main.sh;
 	else
-	        echo "OS notfound :( send me message or contribute with my project" ;
+        echo "OS notfound :( send me message or contribute with my project" ;
 	fi
 
 fi
