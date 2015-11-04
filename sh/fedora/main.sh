@@ -10,6 +10,7 @@
 . sh/fedora/scripts/docker.sh ;
 . sh/fedora/scripts/pip.sh ;
 . sh/fedora/scripts/docker-compose.sh ;
+. sh/fedora/scripts/javajdk.sh ;
 # . sh/fedora/scripts/spotify.sh ;
 . sh/fedora/scripts/slack.sh ;
 # . sh/fedora/scripts/phpstorm.sh ;
