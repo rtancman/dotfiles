@@ -1,8 +1,13 @@
 #!/bin/sh
 
+
+echo -e "${bakblu}[Debian][Install][Start]${txtrst}\n";
+
 apt-get update -y;
 
-. sh/debian/scripts/sample.sh ;
+. sh/debian/scripts/git.sh ;
+. sh/debian/scripts/docker.sh ;
+. sh/debian/scripts/pip.sh ;
+. sh/debian/scripts/docker-compose.sh ;
 
-echo -e "\n${txtgrn}[Debian][Install] Finish ;)";
-echo -e "${txtrst}" ;
+echo -e "\n${bakblu}[Debian][Install][Finish]${txtrst}";
