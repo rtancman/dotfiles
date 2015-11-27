@@ -10,7 +10,7 @@ else
 
 	echo -e "${bakcyn}[Pip python] Start Install ${txtrst}";
 
-	apt-get install python-pip;
+	apt-get install python-pip -y;
 
 	echo -e "${bakgrn}[Pip python] Finish Install ${txtrst}";
 

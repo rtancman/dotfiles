@@ -3,7 +3,11 @@
 
 echo -e "${bakblu}[Fedora][Install][Start]${txtrst}\n";
 
+echo -e "${bakblu}[Fedora]${txtrst} run update";
+
 dnf update -y;
+
+echo -e "${bakblu}[Fedora]${txtrst} finish update\n";
 
 . sh/fedora/scripts/git.sh ;
 . sh/fedora/scripts/sublimetext3.sh ;
@@ -15,7 +19,7 @@ dnf update -y;
 . sh/fedora/scripts/docker-compose.sh ;
 . sh/fedora/scripts/javajdk.sh ;
 # . sh/fedora/scripts/spotify.sh ;
-. sh/fedora/scripts/slack.sh ;
+# . sh/fedora/scripts/slack.sh ;
 # . sh/fedora/scripts/phpstorm.sh ;
 
 echo -e "\n${bakblu}[Fedora][Install][Finish]${txtrst}";
