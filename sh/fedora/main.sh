@@ -1,6 +1,13 @@
 #!/bin/sh
 
-# dnf update -y;
+
+echo -e "${bakblu}[Fedora][Install][Start]${txtrst}\n";
+
+echo -e "${bakblu}[Fedora]${txtrst} run update";
+
+dnf update -y;
+
+echo -e "${bakblu}[Fedora]${txtrst} finish update\n";
 
 . sh/fedora/scripts/git.sh ;
 . sh/fedora/scripts/sublimetext3.sh ;
@@ -12,10 +19,7 @@
 . sh/fedora/scripts/docker-compose.sh ;
 . sh/fedora/scripts/javajdk.sh ;
 # . sh/fedora/scripts/spotify.sh ;
-. sh/fedora/scripts/slack.sh ;
+# . sh/fedora/scripts/slack.sh ;
 # . sh/fedora/scripts/phpstorm.sh ;
 
-# dnf install python-dnf-plugins-extras-migrate && dnf-2 migrate ;
-
-echo -e "\n${txtgrn}[Fedora][Install] Finish ;)";
-echo -e "${txtrst}" ;
+echo -e "\n${bakblu}[Fedora][Install][Finish]${txtrst}";

@@ -11,7 +11,7 @@ echo -e "     888  888 888  888 888    888    888 888 88888888 Y8888b.";
 echo -e "     Y88b 888 Y88..88P Y88b.  888    888 888 Y8b.          X88";
 echo -e "       Y88888   Y88P     Y888 888    888 888   Y8888   88888P'";
 echo -e "                                                             ${bakblu}rtancman${txtrst}";
-echo -e "\n${BGreen} Start...${txtrst}";
+echo -e "\n${BGreen} Start...${txtrst}\n";
 
 if [ "root" != "$USER" ]; then
 	
@@ -31,7 +31,7 @@ else
 
 fi
 
-echo -e "${BGreen} Finish...${txtrst}";
+echo -e "\n${BGreen} ...Finish${txtrst}";
 echo -e "\n${bakblu} thx for coming and help me with our project in https://github.com/rtancman/dotfiles${txtrst}";
 
 exit 1

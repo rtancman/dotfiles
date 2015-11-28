@@ -10,9 +10,7 @@ else
 
 	echo -e "${bakcyn}[Pip python] Start Install ${txtrst}";
 
-	wget https://bootstrap.pypa.io/get-pip.py ;
-	python get-pip.py ;
-	rm -rf get-pip.py ;
+	apt-get install python-pip -y;
 
 	echo -e "${bakgrn}[Pip python] Finish Install ${txtrst}";
 
