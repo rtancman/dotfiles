@@ -23,8 +23,10 @@ else
 
 	if [[ ${osrelease} =~ 'Fedora' ]]; then
         . sh/fedora/main.sh;
-	elif [[ ${osrelease} =~ 'Debian' ]]; then
+    elif [[ ${osrelease} =~ 'Debian' ]]; then
         . sh/debian/main.sh;
+    elif [[ ${osrelease} =~ 'LinuxMint' || ${osrelease} =~ 'Ubuntu' ]]; then
+        . sh/ubuntu/main.sh;
 	else
         echo "OS notfound :( send me message or contribute with my project" ;
 	fi
