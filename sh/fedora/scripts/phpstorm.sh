@@ -6,7 +6,7 @@ tar zxf PhpStorm-9.0.2.tar.gz ;
 mv PhpStorm-141.2462/ /opt/phpstorm ; 
 currentpath="$(pwd)" ;
 cd /opt/phpstorm ;
-. bin/phpstorm.sh ;
+./bin/phpstorm.sh ;
 cd $currentpath ;
 rm -rf PhpStorm-9.0.2.tar.gz ;
 
