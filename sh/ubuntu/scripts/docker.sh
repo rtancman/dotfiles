@@ -10,10 +10,10 @@ else
 
 	echo -e "${bakcyn}[Docker] Start Install ${txtrst}";
 
-	wget -qO- https://get.docker.com/ | sh;
-	service docker start ;
-	usermod -aG docker $DOTFILE_DEFAULT_USER ;
-	service docker restart;
+    wget -qO- https://get.docker.com/ | sh;
+    service docker start ;
+    usermod -aG docker $DOTFILE_DEFAULT_USER;
+    service docker restart;
 
 	echo -e "${bakgrn}[Docker] Finish Install ${txtrst}";
 

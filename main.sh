@@ -14,20 +14,22 @@ echo -e "                                                             ${bakblu}r
 echo -e "\n${BGreen} Start...${txtrst}\n";
 
 if [ "root" != "$USER" ]; then
-	
-	echo -e "${bakred} [Error] You must run with root! ${txtrst}";
+    
+    echo -e "${bakred} [Error] You must run with root! ${txtrst}";
 
 else
 
-	osrelease="$(cat /etc/*-release)"
+    osrelease="$(cat /etc/*-release)"
 
-	if [[ ${osrelease} =~ 'Fedora' ]]; then
+    if [[ ${osrelease} =~ 'Fedora' ]]; then
         . sh/fedora/main.sh;
-	elif [[ ${osrelease} =~ 'Debian' ]]; then
+    elif [[ ${osrelease} =~ 'Debian' ]]; then
         . sh/debian/main.sh;
-	else
+    elif [[ ${osrelease} =~ 'LinuxMint' || ${osrelease} =~ 'Ubuntu' ]]; then
+        . sh/ubuntu/main.sh;
+    else
         echo "OS notfound :( send me message or contribute with my project" ;
-	fi
+    fi
 
 fi
 

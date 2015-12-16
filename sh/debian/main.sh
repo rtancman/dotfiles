@@ -14,5 +14,6 @@ echo -e "${bakblu}[Debian]${txtrst} finish update\n";
 . sh/debian/scripts/docker.sh ;
 . sh/debian/scripts/pip.sh ;
 . sh/debian/scripts/docker-compose.sh ;
+. sh/fedora/scripts/mps-youtube.sh ;
 
 echo -e "\n${bakblu}[Debian][Install][Finish]${txtrst}";
