@@ -10,7 +10,7 @@ else
 
 	echo -e "${bakcyn}[Git] Start Install ${txtrst}";
 	
-	dnf install git;
+	dnf install -y git;
 	
 	echo -e "${bakgrn}[Git] Finish Install ${txtrst}";
 

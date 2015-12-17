@@ -8,6 +8,7 @@ dnf update -y;
 
 echo -e "${bakblu}[Fedora]${txtrst} finish update\n";
 
+. sh/fedora/scripts/ruby.sh ;
 . sh/fedora/scripts/git.sh ;
 . sh/fedora/scripts/sublimetext3.sh ;
 . sh/fedora/scripts/skype.sh ;
@@ -20,5 +21,6 @@ echo -e "${bakblu}[Fedora]${txtrst} finish update\n";
 # . sh/fedora/scripts/spotify.sh ;
 # . sh/fedora/scripts/slack.sh ;
 . sh/fedora/scripts/phpstorm.sh ;
+. sh/common/heroku/main.sh ;
 
 echo -e "\n${bakblu}[Fedora][Install][Finish]${txtrst}";

@@ -17,6 +17,14 @@ if [ "root" != "$USER" ]; then
     
     echo -e "${bakred} [Error] You must run with root! ${txtrst}";
 
+elif [[ "DOTFILESEMPTYUSER" == "$DOTFILE_DEFAULT_USER" || "YOUR_USER_HERE" == "$DOTFILE_DEFAULT_USER" ]]; then
+
+    echo -e "${bakred} [Error] You must put your local USER! \n\n bash main.sh -u YOUR_USER_HERE ${txtrst}";
+
+elif [ ! -e "/home/$DOTFILE_DEFAULT_USER" ]; then
+
+    echo -e "${bakred} [Error] Your local USER do not exists! ${txtrst}";
+
 else
 
     osrelease="$(cat /etc/*-release)"

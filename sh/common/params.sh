@@ -6,7 +6,9 @@
 # as in the --default example).
 # note: if this is set to > 0 the /etc/hosts part is not recognized ( may be a bug )
 
-DOTFILE_DEFAULT_USER=$USER ;
+DOTFILE_DEFAULT_USER="DOTFILESEMPTYUSER";
+DOTFILE_PYTHON=1;
+DOTFILE_PHP=1;
 
 while [[ $# > 1 ]]
 do
@@ -15,6 +17,16 @@ key="$1"
 case $key in
     -u|--user)
     DOTFILE_DEFAULT_USER="$2"
+    shift # past argument
+    ;;
+    -python|--python)
+    DOTFILE_PYTHON=1;
+    DOTFILE_PHP=0;
+    shift # past argument
+    ;;
+    -php|--php)
+    DOTFILE_PYTHON=0;
+    DOTFILE_PHP=1;
     shift # past argument
     ;;
     *)
