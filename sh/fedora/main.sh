@@ -1,6 +1,5 @@
 #!/bin/sh
 
-
 echo -e "${bakblu}[Fedora][Install][Start]${txtrst}\n";
 
 echo -e "${bakblu}[Fedora]${txtrst} run update";
@@ -16,11 +15,10 @@ echo -e "${bakblu}[Fedora]${txtrst} finish update\n";
 . sh/fedora/scripts/virtualbox.sh ;
 . sh/fedora/scripts/docker.sh ;
 . sh/fedora/scripts/pip.sh ;
-. sh/fedora/scripts/docker-compose.sh ;
+. sh/common/pip/main.sh ;
 . sh/fedora/scripts/javajdk.sh ;
 # . sh/fedora/scripts/spotify.sh ;
 # . sh/fedora/scripts/slack.sh ;
 . sh/fedora/scripts/phpstorm.sh ;
-. sh/fedora/scripts/mps-youtube.sh ;
 
 echo -e "\n${bakblu}[Fedora][Install][Finish]${txtrst}";
