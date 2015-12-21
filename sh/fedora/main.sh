@@ -16,7 +16,7 @@ echo -e "${bakblu}[Fedora]${txtrst} finish update\n";
 . sh/fedora/scripts/virtualbox.sh ;
 . sh/fedora/scripts/docker.sh ;
 . sh/fedora/scripts/pip.sh ;
-. sh/common/pip/main.sh ;
+. sh/common/python/main.sh ;
 . sh/fedora/scripts/javajdk.sh ;
 # . sh/fedora/scripts/spotify.sh ;
 # . sh/fedora/scripts/slack.sh ;
