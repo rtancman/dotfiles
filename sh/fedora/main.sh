@@ -21,6 +21,7 @@ echo -e "${bakblu}[Fedora]${txtrst} finish update\n";
 # . sh/fedora/scripts/spotify.sh ;
 # . sh/fedora/scripts/slack.sh ;
 . sh/fedora/scripts/phpstorm.sh ;
+. sh/fedora/scripts/pycharm.sh ;
 . sh/common/heroku/main.sh ;
 
 echo -e "\n${bakblu}[Fedora][Install][Finish]${txtrst}";
