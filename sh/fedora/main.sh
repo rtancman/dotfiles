@@ -8,6 +8,7 @@ dnf update -y;
 
 echo -e "${bakblu}[Fedora]${txtrst} finish update\n";
 
+. sh/fedora/scripts/tools.sh ;
 . sh/fedora/scripts/ruby.sh ;
 . sh/fedora/scripts/git.sh ;
 . sh/fedora/scripts/sublimetext3.sh ;

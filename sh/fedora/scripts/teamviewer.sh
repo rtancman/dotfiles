@@ -1,10 +1,19 @@
 #!/bin/sh
 
-echo -e "${bakcyn}[teamviewer] Start Install ${txtrst}";
+TEAMVIEWER_IS_AVAILABLE="$(teamviewer version 2>&1 >/dev/null)"
 
-wget http://download.teamviewer.com/download/teamviewer.i686.rpm ;
-dnf install -y teamviewer.i686.rpm ;
-rm -rf teamviewer.i686.rpm ;
+if [[ ${TEAMVIEWER_IS_AVAILABLE} == '' ]]; then
+    
+    echo -e "${bakgrn}[installed][teamviewer]${txtrst} already installed ;)" ;
+    
+else
 
-echo -e "${bakgrn}[teamviewer] Finish Install ${txtrst}";
+    echo -e "${bakcyn}[teamviewer] Start Install ${txtrst}";
 
+    wget http://download.teamviewer.com/download/teamviewer.i686.rpm ;
+    dnf install -y teamviewer.i686.rpm ;
+    rm -rf teamviewer.i686.rpm ;
+
+    echo -e "${bakgrn}[teamviewer] Finish Install ${txtrst}";
+
+fi
