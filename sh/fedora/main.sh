@@ -11,6 +11,7 @@ echo -e "${bakblu}[Fedora]${txtrst} finish update\n";
 . sh/fedora/scripts/tools.sh ;
 . sh/fedora/scripts/ruby.sh ;
 . sh/fedora/scripts/git.sh ;
+. sh/fedora/scripts/svn.sh ;
 . sh/fedora/scripts/sublimetext3.sh ;
 . sh/fedora/scripts/skype.sh ;
 . sh/fedora/scripts/chrome.sh ;
