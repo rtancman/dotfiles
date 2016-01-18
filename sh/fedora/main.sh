@@ -26,5 +26,6 @@ echo -e "${bakblu}[Fedora]${txtrst} finish update\n";
 . sh/fedora/scripts/pycharm.sh ;
 . sh/common/heroku/main.sh ;
 . sh/fedora/scripts/teamviewer.sh ;
+. sh/fedora/scripts/zeal.sh ;
 
 echo -e "\n${bakblu}[Fedora][Install][Finish]${txtrst}";
