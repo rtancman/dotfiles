@@ -29,5 +29,6 @@ echo -e "${bakblu}[Fedora]${txtrst} finish update\n";
 . sh/fedora/scripts/zeal.sh;
 . sh/common/sublimetext3plugins/main.sh;
 . sh/fedora/scripts/php.sh;
+. sh/fedora/scripts/vlc.sh;
 
 echo -e "\n${bakblu}[Fedora][Install][Finish]${txtrst}";
