@@ -14,5 +14,6 @@ echo -e "${bakblu}[Ubuntu]${txtrst} finish update\n";
 . sh/debian/scripts/pip.sh ;
 . sh/common/python/main.sh ;
 . sh/common/heroku/main.sh ;
+. sh/common/telegram/main.sh;
 
 echo -e "\n${bakblu}[Ubuntu][Install][Finish]${txtrst}";
