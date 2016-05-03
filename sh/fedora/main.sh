@@ -30,6 +30,7 @@ echo -e "${bakblu}[Fedora]${txtrst} finish update\n";
 # . sh/common/sublimetext3plugins/main.sh;
 # . sh/fedora/scripts/php.sh;
 # . sh/fedora/scripts/vlc.sh;
-. sh/common/vim-bootstrap/main.sh;
+# . sh/common/vim-bootstrap/main.sh;
+. sh/common/telegram/main.sh;
 
 echo -e "\n${bakblu}[Fedora][Install][Finish]${txtrst}";
