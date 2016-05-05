@@ -32,5 +32,6 @@ echo -e "${bakblu}[Fedora]${txtrst} finish update\n";
 . sh/fedora/scripts/vlc.sh;
 . sh/common/vim-bootstrap/main.sh;
 . sh/common/telegram/main.sh;
+. sh/common/ngrok/main.sh;
 
 echo -e "\n${bakblu}[Fedora][Install][Finish]${txtrst}";
