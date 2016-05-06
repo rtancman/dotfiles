@@ -33,5 +33,6 @@ echo -e "${bakblu}[Fedora]${txtrst} finish update\n";
 . sh/common/vim-bootstrap/main.sh;
 . sh/common/telegram/main.sh;
 . sh/common/ngrok/main.sh;
+. sh/fedora/scripts/git-flow.sh;
 
 echo -e "\n${bakblu}[Fedora][Install][Finish]${txtrst}";

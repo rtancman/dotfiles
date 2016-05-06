@@ -1,8 +1,6 @@
 #!/bin/sh
 
-VLC_IS_AVAILABLE="$(vlc --version 2>&1 >/dev/null)"
-
-if [[ ${VLC_IS_AVAILABLE} =~ 'VLC media player' ]]; then
+if [[ -e /usr/bin/vlc ]]; then
     
     echo -e "${bakgrn}[installed][VLC]${txtrst} already installed ;)" ;
     

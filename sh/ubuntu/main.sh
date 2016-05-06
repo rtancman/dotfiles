@@ -9,12 +9,13 @@ apt-get update -y;
 
 echo -e "${bakblu}[Ubuntu]${txtrst} finish update\n";
 
-. sh/debian/scripts/git.sh ;
-. sh/debian/scripts/docker.sh ;
-. sh/debian/scripts/pip.sh ;
+. sh/ubuntu/scripts/git.sh ;
+. sh/ubuntu/scripts/docker.sh ;
+. sh/ubuntu/scripts/pip.sh ;
 . sh/common/python/main.sh ;
 . sh/common/heroku/main.sh ;
 . sh/common/telegram/main.sh;
 . sh/common/ngrok/main.sh;
+. sh/ubuntu/scripts/git-flow.sh;
 
 echo -e "\n${bakblu}[Ubuntu][Install][Finish]${txtrst}";

@@ -16,5 +16,6 @@ echo -e "${bakblu}[Debian]${txtrst} finish update\n";
 . sh/common/heroku/main.sh ;
 . sh/common/telegram/main.sh;
 . sh/common/ngrok/main.sh;
+. sh/debian/scripts/git-flow.sh;
 
 echo -e "\n${bakblu}[Debian][Install][Finish]${txtrst}";
