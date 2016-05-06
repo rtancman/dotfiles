@@ -34,5 +34,6 @@ echo -e "${bakblu}[Fedora]${txtrst} finish update\n";
 . sh/common/telegram/main.sh;
 . sh/common/ngrok/main.sh;
 . sh/fedora/scripts/git-flow.sh;
+. sh/common/git-flow-completion/main.sh;
 
 echo -e "\n${bakblu}[Fedora][Install][Finish]${txtrst}";
