@@ -1,0 +1,32 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"All Autocomplete",
+		"Anaconda",
+		"ColorPick",
+		"ColorPicker",
+		"DocBlockr",
+		"Dockerfile Syntax Highlighting",
+		"Evernote",
+		"GitGutter",
+		"HTMLBeautify",
+		"JSON Reindent",
+		"nginx",
+		"Package Control",
+		"PHP-Twig",
+		"Phpcs",
+		"Pretty JSON",
+		"requirementstxt",
+		"SideBarEnhancements",
+		"SimplePHPUnit",
+		"SublimeCodeIntel",
+		"SublimeGit",
+		"SublimeLinter",
+		"SublimeLinter-php",
+		"Xdebug Client"
+	]
+}
