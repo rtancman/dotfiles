@@ -18,5 +18,6 @@ echo -e "${bakblu}[Ubuntu]${txtrst} finish update\n";
 . sh/common/ngrok/main.sh;
 . sh/ubuntu/scripts/git-flow.sh;
 . sh/common/git-flow-completion/main.sh;
+. sh/common/meetfranz/main.sh;
 
 echo -e "\n${bakblu}[Ubuntu][Install][Finish]${txtrst}";
