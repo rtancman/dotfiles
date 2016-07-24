@@ -31,7 +31,7 @@ echo -e "${bakblu}[Fedora]${txtrst} finish update\n";
 . sh/fedora/scripts/php.sh;
 . sh/fedora/scripts/filezilla.sh;
 . sh/fedora/scripts/vlc.sh;
-# . sh/common/vim-bootstrap/main.sh;
+. sh/common/vim-bootstrap/main.sh;
 . sh/common/telegram/main.sh;
 . sh/common/ngrok/main.sh;
 . sh/fedora/scripts/git-flow.sh;

@@ -13,7 +13,7 @@ echo -e "       Y88888   Y88P     Y888 888    888 888   Y8888   88888P'";
 echo -e "                                                             ${bakblu}rtancman${txtrst}";
 echo -e "\n${BGreen} Start...${txtrst}\n";
 
-if [ "root" != "$USER" ]; then
+if [ $UID != 0 ]; then
     
     echo -e "${bakred} [Error] You must run with root! ${txtrst}";
 
