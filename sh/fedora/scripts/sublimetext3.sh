@@ -1,17 +1,19 @@
 #!/bin/sh
 
+# http://www.simonewebdesign.it/install-sublime-text-3-on-fedora-20/
+
 SUBLIME_IS_AVAILABLE="$(subl -v 2>&1 >/dev/null)"
 
 if [[ ${SUBLIME_IS_AVAILABLE} == '' ]]; then
     
     echo -e "${bakgrn}[installed][Sublime Text 3]${txtrst} already installed ;)" ;
-	
+    
 else
 
-	echo -e "${bakcyn}[Sublime Text 3] Start Install ${txtrst}";
+    echo -e "${bakcyn}[Sublime Text 3] Start Install ${txtrst}";
 
-	curl -L git.io/vWa6H | sh
+    curl -L https://gist.githubusercontent.com/rtancman/1ebe8633338df3319038/raw/ | sh
 
-	echo -e "${bakgrn}[Sublime Text 3] Finish Install ${txtrst}";
+    echo -e "${bakgrn}[Sublime Text 3] Finish Install ${txtrst}";
 
 fi

@@ -2,21 +2,19 @@
 
 if [ -e "/opt/phpstorm/bin/phpstorm.sh" ]; then
 
-    echo -e "${bakgrn}[installed][PhpStorm-9]${txtrst} already installed ;)" ;
+    echo -e "${bakgrn}[installed][PhpStorm-2016.2.1]${txtrst} already installed ;)" ;
     
 else
 
-    echo -e "${bakcyn}[PhpStorm-9] Start Install ${txtrst}";
+    echo -e "${bakcyn}[PhpStorm-2016.2.1] Start Install ${txtrst}";
 
-    wget http://download-cf.jetbrains.com/webide/PhpStorm-9.0.2.tar.gz ;
-    tar zxf PhpStorm-9.0.2.tar.gz ;
-    mv PhpStorm-141.2462/ /opt/phpstorm ; 
-    currentpath="$(pwd)" ;
-    cd /opt/phpstorm ;
-    ./bin/phpstorm.sh ;
-    cd $currentpath ;
-    rm -rf PhpStorm-9.0.2.tar.gz ;
+    wget https://download-cf.jetbrains.com/webide/PhpStorm-2016.2.1.tar.gz;
+    tar zxf PhpStorm-2016.2.1.tar.gz;
+    mv PhpStorm-162.1889.1/ /opt/phpstorm; 
+    /opt/phpstorm/bin/phpstorm.sh
+    rm -rf PhpStorm-2016.2.1.tar.gz;
 
-    echo -e "${bakgrn}[PhpStorm-9] Finish Install ${txtrst}";
+    echo -e "${bakgrn} execute /opt/phpstorm/bin/phpstorm.sh ${txtrst}";
+    echo -e "${bakgrn}[PhpStorm-2016.2.1] Finish Install ${txtrst}";
 
 fi
