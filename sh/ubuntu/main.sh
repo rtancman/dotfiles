@@ -11,6 +11,7 @@ echo -e "${bakblu}[Ubuntu]${txtrst} finish update\n";
 
 . sh/ubuntu/scripts/git.sh ;
 . sh/ubuntu/scripts/docker.sh ;
+. sh/common/docker/main.sh;
 . sh/ubuntu/scripts/pip.sh ;
 . sh/common/python/main.sh ;
 . sh/common/heroku/main.sh ;
