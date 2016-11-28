@@ -6,8 +6,8 @@ echo -e "${bakcyn}[common][Sublime Text 3 Plugins] Start Install ${txtrst}";
 
 if [[ -e "/opt/sublime_text" ]]; then
 
-	. sh/common/sublimetext3plugins/scripts/packagecontrol.sh;
-	. sh/common/sublimetext3plugins/scripts/packagecontrol-plugins.sh;
+	. sh/common/sublime/plugins/scripts/packagecontrol.sh;
+	. sh/common/sublime/plugins/scripts/packagecontrol-plugins.sh;
 
 else
 

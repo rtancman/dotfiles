@@ -1,11 +1,11 @@
 #!/bin/sh
 
-FILEZILLA_IS_AVAILABLE="$(filezilla --version 2>&1 >/dev/null)"
+FILEZILLA_IS_AVAILABLE="$(filezilla --version)"
 
 if [[ ${FILEZILLA_IS_AVAILABLE} =~ 'FileZilla' ]]; then
-    
+
     echo -e "${bakgrn}[installed][filezilla]${txtrst} already installed ;)" ;
-    
+
 else
 
     echo -e "${bakcyn}[filezilla] Start Install ${txtrst}";
