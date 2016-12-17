@@ -28,6 +28,7 @@ echo -e "${bakblu}[Fedora]${txtrst} finish update\n";
 . sh/fedora/scripts/vlc.sh;
 . sh/common/vim-bootstrap/main.sh;
 . sh/common/ngrok/main.sh;
+. sh/fedora/scripts/sublimetext3.sh;
 . sh/common/sublime/main.sh;
 . sh/fedora/scripts/git-flow.sh;
 . sh/common/git-flow-completion/main.sh;
