@@ -10,7 +10,7 @@ else
 
 	echo -e "${bakcyn}[Java JDK e JRE] Start Install ${txtrst}";
 
-	http://www.if-not-true-then-false.com/2010/install-sun-oracle-java-jdk-jre-7-on-fedora-centos-red-hat-rhel/
+	# http://www.if-not-true-then-false.com/2010/install-sun-oracle-java-jdk-jre-7-on-fedora-centos-red-hat-rhel/
 
 	wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u65-b17/jdk-8u65-linux-x64.rpm
 	dnf install -y jdk-8u65-linux-x64.rpm ;
