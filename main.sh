@@ -1,6 +1,7 @@
 #!/bin/sh
 
 . sh/common/init.sh ;
+
 echo -e "\n\n\n\n";
 echo -e "          888          888     .d888 d8b 888";
 echo -e "          888          888    d88P   Y8P 888";
@@ -21,9 +22,13 @@ elif [[ "DOTFILESEMPTYUSER" == "$DOTFILE_DEFAULT_USER" || "YOUR_USER_HERE" == "$
 
     echo -e "${bakred} [Error] You must put your local USER! \n\n bash main.sh -u YOUR_USER_HERE ${txtrst}";
 
-elif [ ! -e "/home/$DOTFILE_DEFAULT_USER" ]; then
+elif [ ! -e "/$DOTFILE_HOME/$DOTFILE_DEFAULT_USER" ]; then
 
     echo -e "${bakred} [Error] Your local USER do not exists! ${txtrst}";
+
+elif [ $DOTFILE_OS == "OSX" ]; then
+
+    . sh/osx/main.sh;
 
 else
 

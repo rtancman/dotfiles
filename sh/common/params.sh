@@ -35,3 +35,11 @@ case $key in
 esac
 shift # past argument or value
 done
+
+DOTFILE_HOME="/home/"
+DOTFILE_OS=""
+
+if [[ "$(uname -s)" == 'Darwin' ]]; then
+    DOTFILE_HOME="/Users/"
+    DOTFILE_OS="OSX"
+fi

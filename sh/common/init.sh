@@ -1,4 +1,13 @@
 #!/bin/sh
 
 . sh/common/params.sh ;
-. sh/common/collors.sh ;
+
+if [ $DOTFILE_OS == "OSX" ]; then
+
+    . sh/common/collors-osx.sh ;
+
+else
+
+    . sh/common/collors.sh ;
+
+fi
