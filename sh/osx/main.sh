@@ -3,9 +3,10 @@
 echo -e "${bakblu}[MacOSX][Install][Start]${txtrst}\n";
 
 . sh/osx/scripts/brew.sh;
-# . sh/osx/scripts/ruby.sh;
-# . sh/osx/scripts/git.sh;
-# . sh/osx/scripts/svn.sh;
+. sh/osx/scripts/brew-cask.sh;
+. sh/osx/scripts/git.sh;
+. sh/osx/scripts/ruby.sh;
+. sh/osx/scripts/svn.sh;
 # . sh/osx/scripts/skype.sh;
 # . sh/osx/scripts/chrome.sh;
 # . sh/osx/scripts/virtualbox.sh;
