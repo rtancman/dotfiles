@@ -7,6 +7,7 @@ echo -e "${bakblu}[MacOSX][Install][Start]${txtrst}\n";
 . sh/osx/scripts/git.sh;
 . sh/osx/scripts/ruby.sh;
 . sh/osx/scripts/svn.sh;
+. sh/osx/scripts/the_silver_searcher.sh;
 # . sh/osx/scripts/skype.sh;
 # . sh/osx/scripts/chrome.sh;
 # . sh/osx/scripts/virtualbox.sh;
