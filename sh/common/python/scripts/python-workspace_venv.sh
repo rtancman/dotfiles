@@ -7,33 +7,44 @@ export WORKON_HOME=~/.ve
 export PROJECT_HOME=~/workspace
 eval "$(pyenv init -)"
 
-pyenv install 3.6-dev
+pyenv install 3.6.0a4
 pyenv install 2.7.12
 
-pyenv virtualenv 3.6-dev jupyter3
-pyenv virtualenv 3.6-dev tools3
+echo -e "CREATE VENVS ---------------------------------------------------------------"
+pyenv virtualenv 3.6.0a4 jupyter3
+pyenv virtualenv 3.6.0a4 tools3
 pyenv virtualenv 2.7.12 ipython2
 pyenv virtualenv 2.7.12 tools2
 
+echo -e "jupyter3 venv ---------------------------------------------------------------"
 pyenv activate jupyter3
 pip install jupyter
 python -m ipykernel install --user
 pyenv deactivate
 
+echo -e "ipython2 venv ---------------------------------------------------------------"
 pyenv activate ipython2
 pip install ipykernel
 python -m ipykernel install --user
 pyenv deactivate
 
+echo -e "tools3 venv ---------------------------------------------------------------"
 pyenv activate tools3
 pip install youtube-dl gnucash-to-beancount rows 
 pyenv deactivate
 
-pyenv activate tools2
-pip install rename s3cmd fabric mercurial
-pyenv deactivate
+# echo -e "tools2 venv ---------------------------------------------------------------"
+# pyenv activate tools2
+# pip install --upgrade pip
+# pip install rename s3cmd fabric mercurial
+# pyenv deactivate
 
-pyenv global 3.6-dev 2.7.12 jupyter3 ipython2 tools3 tools2
+echo -e "---------------------------------------------------------------"
+echo -e "---------------------------------------------------------------"
+echo -e "setup ---------------------------------------------------------------"
+
+# pyenv global 3.6.0a4 2.7.12 jupyter3 ipython2 tools3 tools2
+pyenv global 3.6.0a4 2.7.12 jupyter3 ipython2 tools3
 
 # ipython profile create
 curl -L http://hbn.link/hb-ipython-startup-script > ~/.ipython/profile_default/startup/00-venv-sitepackages.py
@@ -48,4 +59,4 @@ PROJECT_HOME=~/projects/python
 eval "$(pyenv init -)"
 pyenv virtualenvwrapper_lazy
 
-' >> /home/$DOTFILE_DEFAULT_USER/.bashrc
+' >> ~/.bashrc
