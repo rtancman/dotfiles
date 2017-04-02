@@ -7,12 +7,13 @@ export WORKON_HOME=~/.ve
 export PROJECT_HOME=~/workspace
 eval "$(pyenv init -)"
 
-pyenv install 3.6.0a4
+pyenv update
+pyenv install 3.6.0
 pyenv install 2.7.12
 
 echo -e "CREATE VENVS ---------------------------------------------------------------"
-pyenv virtualenv 3.6.0a4 jupyter3
-pyenv virtualenv 3.6.0a4 tools3
+pyenv virtualenv 3.6.0 jupyter3
+pyenv virtualenv 3.6.0 tools3
 pyenv virtualenv 2.7.12 ipython2
 pyenv virtualenv 2.7.12 tools2
 
@@ -43,8 +44,8 @@ echo -e "---------------------------------------------------------------"
 echo -e "---------------------------------------------------------------"
 echo -e "setup ---------------------------------------------------------------"
 
-# pyenv global 3.6.0a4 2.7.12 jupyter3 ipython2 tools3 tools2
-pyenv global 3.6.0a4 2.7.12 jupyter3 ipython2 tools3
+# pyenv global 3.6.0 2.7.12 jupyter3 ipython2 tools3 tools2
+pyenv global 3.6.0 2.7.12 jupyter3 ipython2 tools3
 
 # ipython profile create
 curl -L http://hbn.link/hb-ipython-startup-script > ~/.ipython/profile_default/startup/00-venv-sitepackages.py
