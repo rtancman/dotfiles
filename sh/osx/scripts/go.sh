@@ -1,6 +1,6 @@
 #!/bin/sh
 
-GO_IS_AVAILABLE="$(sudo -u $DOTFILE_DEFAULT_USER go --version 2>&1 >/dev/null)"
+GO_IS_AVAILABLE="$(sudo -u $DOTFILE_DEFAULT_USER go version 2>&1 >/dev/null)"
 
 if [[ ${GO_IS_AVAILABLE} == '' ]]; then
 
