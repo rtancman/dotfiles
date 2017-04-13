@@ -4,7 +4,7 @@ mkdir -p ~/.ve
 mkdir -p ~/projects/python
 
 export WORKON_HOME=~/.ve
-export PROJECT_HOME=~/workspace
+export PROJECT_HOME=~/projects/python
 eval "$(pyenv init -)"
 
 pyenv update
@@ -56,7 +56,7 @@ echo -e '
 
 # virtualenvwrapper
 export WORKON_HOME=~/.ve
-PROJECT_HOME=~/projects/python
+export PROJECT_HOME=~/projects/python
 eval "$(pyenv init -)"
 pyenv virtualenvwrapper_lazy
 

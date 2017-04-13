@@ -17,9 +17,7 @@ else
     echo -e '# pyenv ' >> /home/$DOTFILE_DEFAULT_USER/.bashrc;
     echo -e 'export PATH="$HOME/.pyenv/bin:$PATH"' >> /home/$DOTFILE_DEFAULT_USER/.bashrc ;
     echo -e 'eval "$(pyenv init -)"' >> /home/$DOTFILE_DEFAULT_USER/.bashrc ;
-    echo -e 'eval "$(pyenv virtualenv-init -)"' >> /home/$DOTFILE_DEFAULT_USER/.bashrc ;
     su - $DOTFILE_DEFAULT_USER eval "$(/home/$DOTFILE_DEFAULT_USER/.pyenv/bin/pyenv init -)" ;
-    su - $DOTFILE_DEFAULT_USER eval "$(/home/$DOTFILE_DEFAULT_USER/.pyenv/bin/pyenv virtualenv-init -)" ;
     su - $DOTFILE_DEFAULT_USER /home/$DOTFILE_DEFAULT_USER/.pyenv/bin/pyenv update ;
 
     echo -e "${bakgrn}[pyenv] Finish Install ${txtrst}";
