@@ -4,7 +4,7 @@ echo -e "${bakblu}[Fedora][Install][Start]${txtrst}\n";
 
 echo -e "${bakblu}[Fedora]${txtrst} run update";
 
-# dnf update -y;
+dnf update -y;
 
 echo -e "${bakblu}[Fedora]${txtrst} finish update\n";
 
@@ -14,7 +14,7 @@ echo -e "${bakblu}[Fedora]${txtrst} finish update\n";
 . sh/fedora/scripts/svn.sh;
 . sh/fedora/scripts/skype.sh;
 . sh/fedora/scripts/chrome.sh;
-. sh/fedora/scripts/virtualbox.sh;
+#. sh/fedora/scripts/virtualbox.sh;
 . sh/fedora/scripts/docker.sh;
 . sh/fedora/scripts/pip.sh;
 . sh/common/python/main.sh;

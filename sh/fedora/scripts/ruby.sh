@@ -13,7 +13,8 @@ else
     # https://developer.fedoraproject.org/tech/languages/ruby/gems-installation.html
 	dnf install -y ruby-devel;
     dnf install -y rubygem-thor;
-
+    gem install bundler
+    
 	echo -e "${bakgrn}[ (> Ruby language] Finish Install ${txtrst}";
 
 fi

@@ -2,7 +2,7 @@
 
 TOOBELT_IS_AVAILABLE="$(su - $DOTFILE_DEFAULT_USER heroku --version 2>&1 >/dev/null)"
 
-if [[ ${TOOBELT_IS_AVAILABLE} == '' && -e "/home/$DOTFILE_DEFAULT_USER/.heroku" ]]; then
+if [[ ${TOOBELT_IS_AVAILABLE} == '' || -e "/home/$DOTFILE_DEFAULT_USER/.heroku" || -e /usr/local/heroku/bin/heroku ]]; then
     
     echo -e "${bakgrn}[installed][toolbelt]${txtrst} already installed ;)" ;
     
