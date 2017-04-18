@@ -46,6 +46,18 @@ Plug 'scrooloose/syntastic'
 Plug 'Yggdroot/indentLine'
 Plug 'avelino/vim-bootstrap-updater'
 
+"*****************************************************************************
+"" rtancman plugins
+"***************************************************************************
+Plug 'valloric/youcompleteme'
+Plug 'chiel92/vim-autoformat'
+Plug 'joonty/vdebug'
+Plug 'tpope/vim-eunuch'
+Plug 'nvie/vim-flake8'
+Plug 'hynek/vim-python-pep8-indent'
+Plug 'cburroughs/pep8.py'
+
+
 let g:make = 'gmake'
 if system('uname -o') =~ '^GNU/'
         let g:make = 'make'

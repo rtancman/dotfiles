@@ -8,8 +8,8 @@ export PROJECT_HOME=~/projects/python
 eval "$(pyenv init -)"
 
 pyenv update
-pyenv install 3.6.0
-pyenv install 2.7.12
+env PYTHON_CONFIGURE_OPTS="--enable-shared" pyenv install 3.6.0
+env PYTHON_CONFIGURE_OPTS="--enable-shared" pyenv install 2.7.12
 
 echo -e "CREATE VENVS ---------------------------------------------------------------"
 pyenv virtualenv 3.6.0 jupyter3
