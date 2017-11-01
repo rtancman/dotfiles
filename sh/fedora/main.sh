@@ -42,5 +42,7 @@ echo -e "${bakblu}[Fedora]${txtrst} finish update\n";
 # . sh/common/telegram/main.sh;
 # . sh/fedora/scripts/spotify.sh;
 # . sh/fedora/scripts/slack.sh;
+. sh/fedora/scripts/postgresqlcontrib.sh;
+. sh/fedora/scripts/pgadmin.sh;
 
 echo -e "\n${bakblu}[Fedora][Install][Finish]${txtrst}";
