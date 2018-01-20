@@ -14,8 +14,12 @@ echo -e "       Y88888   Y88P     Y888 888    888 888   Y8888   88888P'";
 echo -e "                                                             ${bakblu}rtancman${txtrst}";
 echo -e "\n${BGreen} Start...${txtrst}\n";
 
-if [ $UID != 0 ]; then
-    
+if [ $DOTFILE_OS == "OSX" ]; then
+
+    . sh/osx/main.sh;
+
+elif [ $UID != 0 ]; then
+
     echo -e "${bakred} [Error] You must run with root! ${txtrst}";
 
 elif [[ "DOTFILESEMPTYUSER" == "$DOTFILE_DEFAULT_USER" || "YOUR_USER_HERE" == "$DOTFILE_DEFAULT_USER" ]]; then
@@ -25,10 +29,6 @@ elif [[ "DOTFILESEMPTYUSER" == "$DOTFILE_DEFAULT_USER" || "YOUR_USER_HERE" == "$
 elif [ ! -e "/$DOTFILE_HOME/$DOTFILE_DEFAULT_USER" ]; then
 
     echo -e "${bakred} [Error] Your local USER do not exists! ${txtrst}";
-
-elif [ $DOTFILE_OS == "OSX" ]; then
-
-    . sh/osx/main.sh;
 
 else
 

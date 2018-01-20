@@ -15,7 +15,12 @@
 # dotfiles
 My dotfiles using shell script inspired by https://github.com/lipemorais/dotfiles
 
-### Run
+### Run MacOSX
+```bash
+$ bash main.sh -u YOUR_LOCAL_USER
+```
+
+### Run linux
 ```bash
 $ sudo bash main.sh -u YOUR_LOCAL_USER
 ```
