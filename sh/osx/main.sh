@@ -23,6 +23,7 @@ echo -e "${bakblu}[MacOSX][Install][Start]${txtrst}\n";
 . sh/osx/scripts/franz.sh;
 . sh/osx/scripts/iterm2.sh;
 . sh/osx/scripts/vim.sh;
+. sh/osx/scripts/mysql.sh;
 . sh/osx/scripts/postgresql.sh;
 . sh/osx/scripts/nvm.sh;
 . sh/osx/scripts/spotify.sh;
