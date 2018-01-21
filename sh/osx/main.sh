@@ -28,6 +28,7 @@ echo -e "${bakblu}[MacOSX][Install][Start]${txtrst}\n";
 . sh/osx/scripts/spotify.sh;
 . sh/osx/scripts/python-workspace.sh;
 . sh/osx/scripts/bashprofile.sh;
+. sh/osx/scripts/yarn.sh;
 
 
 echo -e "\n${bakblu}[MacOSX][Install][Finish]${txtrst}";
