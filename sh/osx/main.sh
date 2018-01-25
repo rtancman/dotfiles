@@ -30,6 +30,7 @@ echo -e "${bakblu}[MacOSX][Install][Start]${txtrst}\n";
 . sh/osx/scripts/python-workspace.sh;
 . sh/osx/scripts/bashprofile.sh;
 . sh/osx/scripts/yarn.sh;
+. sh/osx/scripts/skype.sh;
 
 
 echo -e "\n${bakblu}[MacOSX][Install][Finish]${txtrst}";
