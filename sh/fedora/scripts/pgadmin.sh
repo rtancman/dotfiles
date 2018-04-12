@@ -1,8 +1,8 @@
 #!/bin/sh
 
-PGADMIN3_IS_AVAILABLE="$(pgadmin3 --version 2>&1 >/dev/null)"
+PGADMIN3_IS_AVAILABLE="$(dnf list installed | grep pgadmin3)"
 
-if [[ ${PGADMIN3_IS_AVAILABLE} == '' ]]; then
+if [[ ${PGADMIN3_IS_AVAILABLE} != '' ]]; then
 
     echo -e "${bakgrn}[installed][pgadmin3]${txtrst} already installed ;)" ;
 

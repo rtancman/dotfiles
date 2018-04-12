@@ -1,8 +1,8 @@
 #!/bin/sh
 
-SQLITE_IS_AVAILABLE="$(sqlite --version 2>&1 >/dev/null)"
+SQLITE_IS_AVAILABLE="$(dnf list installed | grep sqlite)"
 
-if [[ ${SQLITE_IS_AVAILABLE} == '' ]]; then
+if [[ ${SQLITE_IS_AVAILABLE} != '' ]]; then
 
     echo -e "${bakgrn}[installed][sqlite]${txtrst} already installed ;)" ;
 
