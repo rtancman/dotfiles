@@ -10,7 +10,6 @@
 #  . $(brew --prefix)/etc/bash_completion
 #fi
 #GIT_PS1_SHOWDIRTYSTATE=false
-
 #GREEN='\e[0;32m'
 #RED='\e[0;31m'
 #LIGHTBLUE='\e[0;94m'
@@ -19,6 +18,11 @@
 #WHITE='\e[0;37m'
 # export PS1='[\u@mbp \w$(__git_ps1)]\$ '
 #export PS1="\[$LIGHTBLUE\]\u\[$DARKGRAY\] \[$DARKGRAY\]\W\[\033[m\]\[$PURPLE\]\$(__git_ps1)\[$WHITE\]\$\[$GREEN\] "
+
+export GIT_PS1_DESCRIBE_STYLE='contains'
+export GIT_PS1_SHOWDIRTYSTATE=true
+source /usr/share/git-core/contrib/completion/git-prompt.sh
+export PS1='[\u@\h \W$(declare -F __git_ps1 &>/dev/null && __git_ps1 " (%s)")]\$ '
 
 #   -----------------------------
 #   2. MAKE TERMINAL BETTER
