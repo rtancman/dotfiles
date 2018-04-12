@@ -8,18 +8,20 @@ dnf update -y;
 
 echo -e "${bakblu}[Fedora]${txtrst} finish update\n";
 
-. sh/fedora/scripts/tools.sh;
-. sh/fedora/scripts/ruby.sh;
 . sh/fedora/scripts/git.sh;
 . sh/fedora/scripts/svn.sh;
+. sh/fedora/scripts/sqlite.sh;
+. sh/fedora/scripts/vim.sh;
+. sh/fedora/scripts/ruby.sh;
 . sh/fedora/scripts/tmux.sh;
 . sh/fedora/scripts/jq.sh;
 . sh/fedora/scripts/skype.sh;
 . sh/fedora/scripts/chrome.sh;
 #. sh/fedora/scripts/virtualbox.sh;
-. sh/fedora/scripts/docker.sh;
+. sh/fedora/scripts/pythondevel.sh;
 . sh/fedora/scripts/pip.sh;
 . sh/common/python/main.sh;
+. sh/fedora/scripts/docker.sh;
 . sh/common/docker/main.sh;
 . sh/fedora/scripts/javajdk.sh;
 . sh/common/heroku/main.sh;
