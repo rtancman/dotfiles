@@ -23,6 +23,7 @@ echo -e "${bakblu}[Fedora]${txtrst} finish update\n";
 . sh/fedora/scripts/pip.sh;
 . sh/fedora/scripts/docker.sh;
 . sh/common/docker/main.sh;
+. sh/fedora/scripts/java.sh;
 #. sh/fedora/scripts/javajdk.sh;
 . sh/common/heroku/main.sh;
 . sh/fedora/scripts/teamviewer.sh;
@@ -47,6 +48,8 @@ echo -e "${bakblu}[Fedora]${txtrst} finish update\n";
 # . sh/fedora/scripts/slack.sh;
 . sh/fedora/scripts/postgresqlcontrib.sh;
 . sh/fedora/scripts/pgadmin.sh;
+. sh/fedora/scripts/dbeaver.sh;
+. sh/fedora/scripts/mysql.sh;
 . sh/common/python/main.sh;
 
 echo -e "\n${bakblu}[Fedora][Install][Finish]${txtrst}";
