@@ -51,5 +51,6 @@ echo -e "${bakblu}[Fedora]${txtrst} finish update\n";
 . sh/fedora/scripts/dbeaver.sh;
 . sh/fedora/scripts/mysql.sh;
 . sh/common/python/main.sh;
+. sh/fedora/scripts/apex.sh;
 
 echo -e "\n${bakblu}[Fedora][Install][Finish]${txtrst}";
