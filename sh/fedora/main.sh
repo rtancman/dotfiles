@@ -11,6 +11,7 @@ echo -e "${bakblu}[Fedora]${txtrst} finish update\n";
 . sh/fedora/scripts/tools.sh;
 . sh/fedora/scripts/git.sh;
 . sh/fedora/scripts/svn.sh;
+. sh/fedora/scripts/mercurial.sh;
 . sh/fedora/scripts/sqlite.sh;
 . sh/fedora/scripts/vim.sh;
 . sh/fedora/scripts/ruby.sh;
@@ -52,5 +53,8 @@ echo -e "${bakblu}[Fedora]${txtrst} finish update\n";
 . sh/fedora/scripts/mysql.sh;
 . sh/common/python/main.sh;
 . sh/fedora/scripts/apex.sh;
+. sh/fedora/scripts/nvm.sh;
+. sh/fedora/scripts/gvm.sh;
+. sh/fedora/scripts/direnv.sh;
 
 echo -e "\n${bakblu}[Fedora][Install][Finish]${txtrst}";
