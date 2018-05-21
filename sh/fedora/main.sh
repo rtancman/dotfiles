@@ -56,5 +56,6 @@ echo -e "${bakblu}[Fedora]${txtrst} finish update\n";
 . sh/fedora/scripts/nvm.sh;
 . sh/fedora/scripts/gvm.sh;
 . sh/fedora/scripts/direnv.sh;
+. sh/common/ruby/scripts/rvm.sh;
 
 echo -e "\n${bakblu}[Fedora][Install][Finish]${txtrst}";
