@@ -1,3 +1,15 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+# Uncomment the following line if you don't like systemctl's auto-paging feature:
+# export SYSTEMD_PAGER=
+
+# User specific aliases and functions
+
 #
 #  >>>> start bash_profile with https://natelandau.com/my-mac-osx-bash_profile/
 #
@@ -10,6 +22,7 @@
 #  . $(brew --prefix)/etc/bash_completion
 #fi
 #GIT_PS1_SHOWDIRTYSTATE=false
+
 #GREEN='\e[0;32m'
 #RED='\e[0;31m'
 #LIGHTBLUE='\e[0;94m'
@@ -19,15 +32,49 @@
 # export PS1='[\u@mbp \w$(__git_ps1)]\$ '
 #export PS1="\[$LIGHTBLUE\]\u\[$DARKGRAY\] \[$DARKGRAY\]\W\[\033[m\]\[$PURPLE\]\$(__git_ps1)\[$WHITE\]\$\[$GREEN\] "
 
+# pyenv 
+export PATH="$HOME/.pyenv/bin:$PATH"
+
+# virtualenvwrapper
+export WORKON_HOME=~/.ve
+export PROJECT_HOME=~/projects/python
+eval "$(pyenv init -)"
+pyenv virtualenvwrapper_lazy
+
+# git-flow-completion
+source ~/.git-flow-completion
 export GIT_PS1_DESCRIBE_STYLE='contains'
 export GIT_PS1_SHOWDIRTYSTATE=true
 source /usr/share/git-core/contrib/completion/git-prompt.sh
+
 export PS1='[\u@\h \W$(declare -F __git_ps1 &>/dev/null && __git_ps1 " (%s)")]\$ '
+
+#apex
+_apex()  {
+  COMPREPLY=()
+  local cur="${COMP_WORDS[COMP_CWORD]}"
+  local opts="$(apex autocomplete -- ${COMP_WORDS[@]:1})"
+  COMPREPLY=( $(compgen -W "${opts}" -- ${cur}) )
+  return 0
+}
+
+complete -F _apex apex
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+[[ -s "/home/rtancman/.gvm/scripts/gvm" ]] && source "/home/rtancman/.gvm/scripts/gvm"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+#export PATH="$PATH:$HOME/.rvm/bin"
+export PATH="$GEM_HOME/bin:$PATH"
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
 #   -----------------------------
 #   2. MAKE TERMINAL BETTER
 #   -----------------------------
-
+alias gvim='gvim -v'
 alias cp='cp -iv'                           # Preferred 'cp' implementation
 alias mv='mv -iv'                           # Preferred 'mv' implementation
 alias mkdir='mkdir -pv'                     # Preferred 'mkdir' implementation
@@ -273,3 +320,9 @@ httpHeaders () { /usr/bin/curl -I -L $@ ; }             # httpHeaders:      Grab
 #   e.g.: hdiutil create -size 10m 10MB.dmg
 #   the above create files that are almost all zeros - if random bytes are desired
 #   then use: ~/Dev/Perl/randBytes 1048576 > 10MB.dat
+
+
+
+
+
+
