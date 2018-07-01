@@ -14,6 +14,7 @@ echo -e "${bakblu}[Fedora]${txtrst} finish update\n";
 . sh/fedora/scripts/mercurial.sh;
 . sh/fedora/scripts/sqlite.sh;
 . sh/fedora/scripts/vim.sh;
+. sh/fedora/scripts/gvim.sh;
 . sh/fedora/scripts/ruby.sh;
 . sh/fedora/scripts/tmux.sh;
 . sh/fedora/scripts/jq.sh;
@@ -56,6 +57,6 @@ echo -e "${bakblu}[Fedora]${txtrst} finish update\n";
 . sh/fedora/scripts/nvm.sh;
 . sh/fedora/scripts/gvm.sh;
 . sh/fedora/scripts/direnv.sh;
-. sh/common/ruby/scripts/rvm.sh;
+#. sh/common/ruby/scripts/rvm.sh;
 
 echo -e "\n${bakblu}[Fedora][Install][Finish]${txtrst}";
