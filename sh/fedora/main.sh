@@ -4,7 +4,7 @@ echo -e "${bakblu}[Fedora][Install][Start]${txtrst}\n";
 
 echo -e "${bakblu}[Fedora]${txtrst} run update";
 
-dnf update -y;
+#dnf update -y;
 
 echo -e "${bakblu}[Fedora]${txtrst} finish update\n";
 
@@ -18,7 +18,7 @@ echo -e "${bakblu}[Fedora]${txtrst} finish update\n";
 . sh/fedora/scripts/ruby.sh;
 . sh/fedora/scripts/tmux.sh;
 . sh/fedora/scripts/jq.sh;
-. sh/fedora/scripts/skype.sh;
+#. sh/fedora/scripts/skype.sh;
 . sh/fedora/scripts/chrome.sh;
 #. sh/fedora/scripts/virtualbox.sh;
 . sh/fedora/scripts/pythondevel.sh;
@@ -50,7 +50,7 @@ echo -e "${bakblu}[Fedora]${txtrst} finish update\n";
 # . sh/fedora/scripts/slack.sh;
 . sh/fedora/scripts/postgresqlcontrib.sh;
 . sh/fedora/scripts/pgadmin.sh;
-. sh/fedora/scripts/dbeaver.sh;
+#. sh/fedora/scripts/dbeaver.sh;
 . sh/fedora/scripts/mysql.sh;
 . sh/common/python/main.sh;
 . sh/fedora/scripts/apex.sh;
@@ -58,5 +58,6 @@ echo -e "${bakblu}[Fedora]${txtrst} finish update\n";
 . sh/fedora/scripts/gvm.sh;
 . sh/fedora/scripts/direnv.sh;
 #. sh/common/ruby/scripts/rvm.sh;
+. sh/fedora/scripts/flatpak.sh;
 
 echo -e "\n${bakblu}[Fedora][Install][Finish]${txtrst}";

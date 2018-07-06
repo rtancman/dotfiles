@@ -1,8 +1,6 @@
 #!/bin/sh
 
-NVM_IS_AVAILABLE="$(nvm --version 2>&1 >/dev/null)"
-
-if [[ ${NVM_IS_AVAILABLE} == '' ]]; then
+if [[ -e /home/$DOTFILE_DEFAULT_USER/.nvm/nvm.sh ]]; then
 
     echo -e "${bakgrn}[installed][nvm]${txtrst} already installed ;)" ;
 

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-APEX_IS_AVAILABLE="$(apex version 2>&1 >/dev/null)"
+APEX_IS_AVAILABLE="$(/usr/local/bin/apex version 2>&1 >/dev/null)"
 
 if [[ ${APEX_IS_AVAILABLE} == '' ]]; then
 
@@ -10,7 +10,7 @@ else
 
 	echo -e "${bakcyn}[apex] Start Install ${txtrst}";
 
-  curl https://raw.githubusercontent.com/apex/apex/master/install.sh | sudo sh
+    curl https://raw.githubusercontent.com/apex/apex/master/install.sh | sudo sh
 
 	echo -e "${bakgrn}[apex] Finish Install ${txtrst}";
 

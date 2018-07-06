@@ -1,8 +1,6 @@
 #!/bin/sh
 
-DIRENV_IS_AVAILABLE="$(direnv version 2>&1 >/dev/null)"
-
-if [[ ${DIRENV_IS_AVAILABLE} == '' ]]; then
+if [[ -e /home/$DOTFILE_DEFAULT_USER/.gvm/bin/gvm ]]; then
 
     echo -e "${bakgrn}[installed][direnv]${txtrst} already installed ;)" ;
 
@@ -14,4 +12,4 @@ else
 
 	echo -e "${bakgrn}[direnv] Finish Install ${txtrst}";
 
-fid
+fi
