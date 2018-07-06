@@ -9,7 +9,7 @@ sudo -u $DOTFILE_DEFAULT_USER flatpak --user install -y --from https://linphone.
 flatpak install -y flathub com.skype.Client
 flatpak install -y flathub com.jetbrains.PyCharm-Community
 flatpak install -y flathub com.jgraph.drawio.desktop
-
+flatpak install -y flathub com.obsproject.Studio
 
 echo -e "${bakgrn}[flatpak] Finish Install ${txtrst}";
 
