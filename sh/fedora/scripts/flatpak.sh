@@ -11,6 +11,7 @@ flatpak install -y flathub com.jetbrains.PyCharm-Community
 flatpak install -y flathub com.jgraph.drawio.desktop
 flatpak install -y flathub com.obsproject.Studio
 flatpak install -y flathub com.getpostman.Postman
+flatpak install -y flathub com.visualstudio.code
 
 echo -e "${bakgrn}[flatpak] Finish Install ${txtrst}";
 
