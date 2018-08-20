@@ -1,0 +1,15 @@
+ext install nathanchapman.JavaScriptSnippets
+ext install oderwat.indent-rainbow
+ext install CoenraadS.bracket-pair-colorizer
+ext install EQuimper.react-native-react-redux
+ext install TimonVS.ReactSnippetsStandard
+ext install wayou.vscode-todo-highlight
+ext install minhthai.vscode-todo-parser
+ext install wix.vscode-import-cost
+ext install humao.rest-client
+ext install formulahendry.auto-close-tag
+ext install formulahendry.auto-rename-tag
+ext install eamodio.gitlens
+ext install alefragnani.project-manager
+ext install emmanuelbeziat.vscode-great-icons
+ext install SirTori.indenticator
