@@ -2,17 +2,18 @@
 
 echo -e "${bakcyn}[flatpak] Start Install ${txtrst}";
 
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-
-sudo -u $DOTFILE_DEFAULT_USER flatpak install -y flathub com.slack.Slack
+sudo -u $DOTFILE_DEFAULT_USER flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+sudo -u $DOTFILE_DEFAULT_USER flatpak update --user
 sudo -u $DOTFILE_DEFAULT_USER flatpak --user install -y --from https://linphone.org/flatpak/linphone.flatpakref
-flatpak install -y flathub com.skype.Client
-flatpak install -y flathub com.jetbrains.PyCharm-Community
-flatpak install -y flathub com.jgraph.drawio.desktop
-flatpak install -y flathub com.obsproject.Studio
-flatpak install -y flathub com.getpostman.Postman
-flatpak install -y flathub com.visualstudio.code
-flatpak install -y flathub com.google.AndroidStudio
+sudo -u $DOTFILE_DEFAULT_USER flatpak --user install -y flathub \
+    com.slack.Slack \
+    com.skype.Client \
+    com.jetbrains.PyCharm-Community \
+    com.jgraph.drawio.desktop \
+    com.obsproject.Studio \
+    com.getpostman.Postman \
+    com.visualstudio.code \
+    com.google.AndroidStudio
 
 echo -e "${bakgrn}[flatpak] Finish Install ${txtrst}";
 
