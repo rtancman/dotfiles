@@ -13,3 +13,5 @@ ext install eamodio.gitlens
 ext install alefragnani.project-manager
 ext install emmanuelbeziat.vscode-great-icons
 ext install SirTori.indenticator
+ext install wakatime
+ext install msjsdiag.debugger-for-chrome
