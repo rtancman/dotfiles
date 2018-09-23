@@ -14,4 +14,5 @@ ext install alefragnani.project-manager
 ext install emmanuelbeziat.vscode-great-icons
 ext install SirTori.indenticator
 ext install wakatime
+ext install Orta.vscode-jest
 ext install msjsdiag.debugger-for-chrome
