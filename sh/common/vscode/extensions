@@ -16,3 +16,6 @@ ext install SirTori.indenticator
 ext install wakatime
 ext install Orta.vscode-jest
 ext install msjsdiag.debugger-for-chrome
+ext install MS-vsliveshare.vsliveshare
+ext install rebornix.Ruby
+ext install misogi.ruby-rubocop
