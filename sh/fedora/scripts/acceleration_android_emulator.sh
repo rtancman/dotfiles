@@ -9,7 +9,7 @@ else
 
 	echo -e "${bakcyn}[Android emulator] Start Install ${txtrst}";
 
-    dnf install -y qemu-kvm virt-manager virt-viewer android-tools
+    dnf install -y qemu-kvm virt-manager virt-viewer android-tools VirtualBox kernel-devel gstreamer-plugins-base libpng12
     dnf group install virtualization
     systemctl start libvirtd
     systemctl enable libvirtd
@@ -21,6 +21,7 @@ else
    # yarn global add create-react-native-app
    # yarn global add expo-cli
    # yarn global add exp
+   # yarn global add react-devtools
 	echo -e "${bakgrn}[Android emulator] Finish Install ${txtrst}";
 
 fi
