@@ -14,7 +14,9 @@ sudo -u $DOTFILE_DEFAULT_USER flatpak --user install -y flathub \
     com.getpostman.Postman \
     com.visualstudio.code \
     com.google.AndroidStudio \
-    org.gnucash.GnuCash
+    org.gnucash.GnuCash \
+    org.gimp.GIMP
+
 
 echo -e "${bakgrn}[flatpak] Finish Install ${txtrst}";
 
