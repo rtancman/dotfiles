@@ -71,9 +71,28 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="$GEM_HOME/bin:$PATH"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
+# Add Yarn in path
+export PATH="$(yarn global bin):$PATH"
+
+# Add Android in path
+export ANDROID_HOME="$HOME/Android/Sdk"
+export ANDROID_SDK="$ANDROID_HOME"
+#export PATH="$PATH:$ANDROID_SDK"
+#export PATH="$PATH:$ANDROID_SDK/platform-tools"
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+alias androidemulator='emulator -avd Nexus_5X_API_28_x86'
+
 #   -----------------------------
 #   2. MAKE TERMINAL BETTER
 #   -----------------------------
+
+#tmux
+#[[ $TERM != "screen" ]] && exec tmux
+
+#alias
 alias gvim='gvim -v'
 alias cp='cp -iv'                           # Preferred 'cp' implementation
 alias mv='mv -iv'                           # Preferred 'mv' implementation
@@ -101,6 +120,7 @@ mcd () { mkdir -p "$1" && cd "$1"; }        # mcd:          Makes new Dir and ju
 trash () { command mv "$@" ~/.Trash ; }     # trash:        Moves a file to the MacOS trash
 ql () { qlmanage -p "$*" >& /dev/null; }    # ql:           Opens any file in MacOS Quicklook Preview
 alias DT='tee ~/Desktop/terminalOut.txt'    # DT:           Pipe content to file on MacOS Desktop
+alias vscode='flatpak run com.visualstudio.code'
 
 #   lr:  Full Recursive Directory Listing
 #   ------------------------------------------
@@ -128,6 +148,38 @@ alias make1mb='mkfile 1m ./1MB.dat'         # make1mb:      Creates a file of 1m
 alias make5mb='mkfile 5m ./5MB.dat'         # make5mb:      Creates a file of 5mb size (all zeros)
 alias make10mb='mkfile 10m ./10MB.dat'      # make10mb:     Creates a file of 10mb size (all zeros)
 
+
+# tat
+# Attach or create tmux session named the same as current directory.
+tat() {
+    path_name="$(basename "$PWD" | tr . -)"
+    session_name=${1-$path_name}
+
+    not_in_tmux() {
+        [ -z "$TMUX" ]
+    }
+
+    session_exists() {
+        tmux list-sessions | sed -E 's/:.*$//' | grep -q "^$session_name$"
+    }
+
+    create_detached_session() {
+        (TMUX='' tmux new-session -Ad -s "$session_name")
+    }
+
+    create_if_needed_and_attach() {
+        if not_in_tmux; then
+            tmux new-session -As "$session_name"
+        else
+            if ! session_exists; then
+                create_detached_session
+            fi
+            tmux switch-client -t "$session_name"
+        fi
+    }
+
+    create_if_needed_and_attach
+}
 #   cdf:  'Cd's to frontmost window of MacOS Finder
 #   ------------------------------------------------------
     cdf () {
