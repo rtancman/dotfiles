@@ -32,7 +32,7 @@ fi
 # export PS1='[\u@mbp \w$(__git_ps1)]\$ '
 #export PS1="\[$LIGHTBLUE\]\u\[$DARKGRAY\] \[$DARKGRAY\]\W\[\033[m\]\[$PURPLE\]\$(__git_ps1)\[$WHITE\]\$\[$GREEN\] "
 
-# pyenv 
+# pyenv
 export PATH="$HOME/.pyenv/bin:$PATH"
 
 # virtualenvwrapper
@@ -149,15 +149,22 @@ alias make5mb='mkfile 5m ./5MB.dat'         # make5mb:      Creates a file of 5m
 alias make10mb='mkfile 10m ./10MB.dat'      # make10mb:     Creates a file of 10mb size (all zeros)
 
 
+#   ------------------------------------------------------
+#   TMUX functions
+
+not_in_tmux() {
+    [ -z "$TMUX" ]
+}
+
+not_inside_tmux() {
+    [[ -z "$TMUX" ]]
+}
+
 # tat
 # Attach or create tmux session named the same as current directory.
 tat() {
     path_name="$(basename "$PWD" | tr . -)"
     session_name=${1-$path_name}
-
-    not_in_tmux() {
-        [ -z "$TMUX" ]
-    }
 
     session_exists() {
         tmux list-sessions | sed -E 's/:.*$//' | grep -q "^$session_name$"
@@ -180,6 +187,16 @@ tat() {
 
     create_if_needed_and_attach
 }
+
+ensure_tmux_is_running() {
+  if not_inside_tmux; then
+    tat
+  fi
+}
+
+ensure_tmux_is_running
+#   ------------------------------------------------------
+
 #   cdf:  'Cd's to frontmost window of MacOS Finder
 #   ------------------------------------------------------
     cdf () {
