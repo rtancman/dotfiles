@@ -59,8 +59,8 @@ echo -e "${bakblu}[Fedora]${txtrst} finish update\n";
 . sh/fedora/scripts/direnv.sh;
 #. sh/common/ruby/scripts/rvm.sh;
 . sh/fedora/scripts/flatpak.sh;
-. sh/defora/scripts/mongodb.sh;
-. sh/defora/scripts/robomongo.sh;
-. sh/defora/scripts/redis.sh;
+. sh/fedora/scripts/mongodb.sh;
+. sh/fedora/scripts/robomongo.sh;
+. sh/fedora/scripts/redis.sh;
 
 echo -e "\n${bakblu}[Fedora][Install][Finish]${txtrst}";
