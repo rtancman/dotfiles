@@ -62,5 +62,6 @@ echo -e "${bakblu}[Fedora]${txtrst} finish update\n";
 . sh/fedora/scripts/mongodb.sh;
 . sh/fedora/scripts/robomongo.sh;
 . sh/fedora/scripts/redis.sh;
+. sh/fedora/scripts/vscode.sh;
 
 echo -e "\n${bakblu}[Fedora][Install][Finish]${txtrst}";

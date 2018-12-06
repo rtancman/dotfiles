@@ -1,0 +1,39 @@
+{
+    "[javascript]": {
+        "editor.tabSize": 2,
+    },
+    "[json]": {
+        "editor.tabSize": 2
+    },
+    "[css]": {
+        "editor.tabSize": 2
+    },
+    "[html]": {
+        "editor.tabSize": 2
+    },
+    "[scss]": {
+        "editor.tabSize": 2
+    },
+    "emojisense.languages": {
+        "markdown": true,
+        "javascript": true,
+        "html": true,
+        "git-commit": true,
+        "plaintext": true,
+        "json": true
+    },
+    "workbench.startupEditor": "newUntitledFile",
+    "window.zoomLevel": 0,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "explorer.confirmDragAndDrop": false,
+
+    //terminal
+    "terminal.integrated.shell.linux": "/bin/bash",
+    "terminal.external.linuxExec": "/bin/bash",
+    //"terminal.integrated.shellArgs.linux": ["-l"],
+
+    //Java
+    //"java.home": "~/java/jre1.8.0_171-amd64",
+    //"java.bin": "~/java/jre1.8.0_171-amd64/bin/java"
+}
+

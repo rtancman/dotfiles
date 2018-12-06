@@ -1,9 +1,9 @@
 #!/bin/sh
 
 if [[ -e /usr/bin/vlc ]]; then
-    
+
     echo -e "${bakgrn}[installed][VLC]${txtrst} already installed ;)" ;
-    
+
 else
 
     echo -e "${bakcyn}[VLC] Start Install ${txtrst}";

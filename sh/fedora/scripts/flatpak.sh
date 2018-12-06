@@ -12,7 +12,6 @@ sudo -u $DOTFILE_DEFAULT_USER flatpak --user install -y flathub \
     com.jgraph.drawio.desktop \
     com.obsproject.Studio \
     com.getpostman.Postman \
-    com.visualstudio.code \
     com.google.AndroidStudio \
     org.gnucash.GnuCash \
     org.gimp.GIMP
