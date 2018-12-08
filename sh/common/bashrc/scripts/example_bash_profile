@@ -5,6 +5,10 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
+# User specific environment
+PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+export PATH
+
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
 # export SYSTEMD_PAGER=
 
@@ -194,7 +198,8 @@ ensure_tmux_is_running() {
   fi
 }
 
-ensure_tmux_is_running
+#ensure_tmux_is_running
+
 #   ------------------------------------------------------
 
 #   cdf:  'Cd's to frontmost window of MacOS Finder

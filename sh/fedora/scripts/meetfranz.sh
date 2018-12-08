@@ -11,11 +11,17 @@ else
 
     dnf install -y libX11-devel libXext-devel libXScrnSaver-devel libxkbfile-devel
 
-    # meetfranz
-    wget --max-redirect=10 -O Franz-linux-x64.tgz https://github.com/meetfranz/franz-app-legacy/releases/download/4.0.4/Franz-linux-x64-4.0.4.tgz
     mkdir -p /opt/meetfranz
-    tar zxvf Franz-linux-x64.tgz -C /opt/meetfranz
-    rm -rf Franz-linux-x64.tgz
+    wget https://github.com/meetfranz/franz/releases/download/v5.0.0-beta.20/franz-5.0.0-beta.20-x86_64.AppImage
+    mv franz-5.0.0-beta.20-x86_64.AppImage /opt/meetfranz/Franz
+    cp sh/common/meetfranz/franz_256x256.png /opt/meetfranz/franz_256x256.png
+    chmod +x /opt/meetfranz/Franz /opt/meetfranz/franz_256x256.png
+
+#    # meetfranz
+#    wget --max-redirect=10 -O Franz-linux-x64.tgz https://github.com/meetfranz/franz-app-legacy/releases/download/4.0.4/Franz-linux-x64-4.0.4.tgz
+#    mkdir -p /opt/meetfranz
+#    tar zxvf Franz-linux-x64.tgz -C /opt/meetfranz
+#    rm -rf Franz-linux-x64.tgz
 
     # Add to applications list (thanks 4ndrej)
     echo -e '' >> /opt/meetfranz/meetfranz.desktop;
@@ -34,7 +40,7 @@ Name=Franz
 GenericName=meetfranz
 Exec=/opt/meetfranz/Franz %F
 Terminal=false
-Icon=/opt/meetfranz/resources/app.asar.unpacked/assets/franz.png
+Icon=/opt/meetfranz/franz_256x256.png
 Categories=Messenger;
 StartupNotify=true
 Actions=Window;Document;
