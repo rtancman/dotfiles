@@ -18,10 +18,6 @@ else
     udevadm control --reload
     systemctl restart systemd-udevd.service
 
-   # yarn global add create-react-native-app
-   # yarn global add expo-cli
-   # yarn global add exp
-   # yarn global add react-devtools
 	echo -e "${bakgrn}[Android emulator] Finish Install ${txtrst}";
 
 fi

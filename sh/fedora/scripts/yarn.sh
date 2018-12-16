@@ -13,6 +13,7 @@ else
     curl --silent --location https://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yum.repos.d/yarn.repo
     dnf install yarn -y
 
+    # yarn global add create-react-native-app expo-cli exp react-devtools create-react-app jest-cli
 	echo -e "${bakgrn}[yarn] Finish Install ${txtrst}";
 
 fi
