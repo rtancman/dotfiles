@@ -16,6 +16,8 @@ else
     dnf check-update
     dnf install code -y
 
+    sudo -u $DOTFILE_DEFAULT_USER bash ./sh/common/vscode/extensions
+
     echo -e "${bakgrn}[VSCode] Finish Install ${txtrst}";
 
 fi
