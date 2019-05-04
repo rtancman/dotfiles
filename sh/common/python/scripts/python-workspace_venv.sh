@@ -8,12 +8,13 @@ export PROJECT_HOME=~/projects/python
 eval "$(pyenv init -)"
 
 pyenv update
+env PYTHON_CONFIGURE_OPTS="--enable-shared" pyenv install 3.7.3
 env PYTHON_CONFIGURE_OPTS="--enable-shared" pyenv install 3.6.5
 env PYTHON_CONFIGURE_OPTS="--enable-shared" pyenv install 2.7.15
 
 echo -e "CREATE VENVS ---------------------------------------------------------------"
-pyenv virtualenv 3.6.5 jupyter3
-pyenv virtualenv 3.6.5 tools3
+pyenv virtualenv 3.7.3 jupyter3
+pyenv virtualenv 3.7.3 tools3
 pyenv virtualenv 2.7.15 ipython2
 pyenv virtualenv 2.7.15 tools2
 
@@ -44,7 +45,7 @@ echo -e "---------------------------------------------------------------"
 echo -e "---------------------------------------------------------------"
 echo -e "setup ---------------------------------------------------------------"
 
-pyenv global 3.6.5 2.7.15 jupyter3 ipython2 tools3 tools2
+pyenv global 3.7.3 2.7.15 jupyter3 ipython2 tools3 tools2
 
 ipython profile create
 curl -L http://hbn.link/hb-ipython-startup-script > ~/.ipython/profile_default/startup/00-venv-sitepackages.py
