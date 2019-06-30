@@ -16,7 +16,8 @@ sudo -u $DOTFILE_DEFAULT_USER flatpak --user install -y flathub \
     org.gnucash.GnuCash \
     org.gimp.GIMP \
     com.spotify.Client \
-    org.videolan.VLC
+    org.videolan.VLC \
+    com.uploadedlobster.peek
 
 echo -e "${bakgrn}[flatpak] Finish Install ${txtrst}";
 
