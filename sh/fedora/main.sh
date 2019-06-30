@@ -59,5 +59,6 @@ echo -e "${bakblu}[Fedora]${txtrst} finish update\n";
 . sh/fedora/scripts/acceleration_android_emulator.sh;
 #. sh/fedora/scripts/peek.sh;
 . sh/fedora/scripts/kubectl.sh;
+. sh/fedora/scripts/tmate.sh;
 
 echo -e "\n${bakblu}[Fedora][Install][Finish]${txtrst}";
