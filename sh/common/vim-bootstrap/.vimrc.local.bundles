@@ -1,0 +1,10 @@
+" Plugins
+Plug 'wakatime/vim-wakatime'
+Plug 'ngmy/vim-rubocop'
+Plug 'rainerborene/vim-reek'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'mxw/vim-jsx'
+" Plug 'w0rp/ale'
+Plug 'christoomey/vim-tmux-navigator'
+
+

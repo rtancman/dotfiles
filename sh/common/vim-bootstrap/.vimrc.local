@@ -1,0 +1,36 @@
+" Config
+" set relativenumber
+set nrformats+=alpha
+let g:NERDTreeMapOpenInTabSilent = 'T'
+
+" Ruby Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 1
+let g:syntastic_ruby_checkers = ['rubocop', 'reek']
+let g:vimrubocop_config = '.rubocop.yml'
+let g:reek_on_loading = 0
+
+" Remove Trailing Whitespace
+nnoremap <silent> <F5> :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
+
+
+" vim-javascript
+augroup vimrc-javascript
+  autocmd!
+  autocmd FileType javascript,javascript.jsx set tabstop=2|set shiftwidth=2|set expandtab softtabstop=2
+augroup END
+
+" Vim autoresize
+autocmd VimResized * :wincmd =
+
+" zoom a vim pane, <C-w>= to re-balance
+nnoremap <leader>- :wincmd _<cr>:wincmd \|<cr>
+nnoremap <leader>= :wincmd =<cr>
+
+" xclip
+" vmap <c-c> y:call system("xclip -i -selection clipboard", getreg("\""))<cr>:call system("xclip -i", getreg("\""))<cr>
+" nmap <c-v> :call setreg("\"",system("xclip -o -selection clipboard"))<cr>p")")")"))
+
