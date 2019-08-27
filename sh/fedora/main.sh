@@ -60,5 +60,6 @@ echo -e "${bakblu}[Fedora]${txtrst} finish update\n";
 #. sh/fedora/scripts/peek.sh;
 . sh/fedora/scripts/kubectl.sh;
 . sh/fedora/scripts/tmate.sh;
+. sh/fedora/scripts/wrk.sh;
 
 echo -e "\n${bakblu}[Fedora][Install][Finish]${txtrst}";
