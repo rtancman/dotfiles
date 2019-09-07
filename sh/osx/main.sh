@@ -12,6 +12,7 @@ echo -e "${bakblu}[MacOSX][Install][Start]${txtrst}\n";
 . sh/osx/scripts/jq.sh;
 . sh/osx/scripts/ruby.sh;
 . sh/osx/scripts/ngrok.sh;
+. sh/osx/scripts/tmux.sh;
 . sh/osx/scripts/docker.sh;
 . sh/osx/scripts/virtualbox.sh;
 # . sh/osx/scripts/chrome.sh;
@@ -31,6 +32,14 @@ echo -e "${bakblu}[MacOSX][Install][Start]${txtrst}\n";
 . sh/osx/scripts/bashprofile.sh;
 . sh/osx/scripts/yarn.sh;
 . sh/osx/scripts/skype.sh;
+. sh/osx/scripts/vscode.sh;
+. sh/osx/scripts/tmate.sh;
+. sh/osx/scripts/redis.sh;
+. sh/osx/scripts/mongo.sh;
+. sh/osx/scripts/golang-gvm.sh;
+. sh/osx/scripts/robomongo.sh;
+. sh/osx/scripts/wrk.sh;
+. sh/osx/scripts/vegeta.sh;
 
 
 echo -e "\n${bakblu}[MacOSX][Install][Finish]${txtrst}";
