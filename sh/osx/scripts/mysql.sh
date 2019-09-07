@@ -10,9 +10,9 @@ else
     echo -e "${bakgrn}[mysql] Finish Install ${txtrst}";
 fi
 
-MYSQLWORKBENCH_IS_AVAILABLE="$(brew cask list | grep mysqlworkbench 2>&1 >/dev/null)"
+MYSQLWORKBENCH_IS_AVAILABLE="$(brew cask list | grep mysqlworkbench)"
 
-if [[ ${MYSQLWORKBENCH_IS_AVAILABLE} == '' ]]; then
+if [[ ${MYSQLWORKBENCH_IS_AVAILABLE} == 'mysqlworkbench' ]]; then
     echo -e "${bakgrn}[installed][mysqlworkbench]${txtrst}" ;
 else
     echo -e "${bakcyn}[mysqlworkbench] Start Install ${txtrst}";

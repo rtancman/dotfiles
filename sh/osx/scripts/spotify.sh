@@ -1,8 +1,8 @@
 #!/bin/sh
 
-SPOTIFY_IS_AVAILABLE="$(brew cask list | grep spotify 2>&1 >/dev/null)"
+SPOTIFY_IS_AVAILABLE="$(brew cask list | grep spotify)"
 
-if [[ ${SPOTIFY_IS_AVAILABLE} == '' ]]; then
+if [[ ${SPOTIFY_IS_AVAILABLE} == 'spotify' ]]; then
 
     echo -e "${bakgrn}[installed][spotify]${txtrst}" ;
 

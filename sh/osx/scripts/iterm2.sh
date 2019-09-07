@@ -1,8 +1,8 @@
 #!/bin/sh
 
-ITERM2_IS_AVAILABLE="$(brew cask list | grep iterm2 2>&1 >/dev/null)"
+ITERM2_IS_AVAILABLE="$(brew cask list | grep iterm2)"
 
-if [[ ${ITERM2_IS_AVAILABLE} == '' ]]; then
+if [[ ${ITERM2_IS_AVAILABLE} == 'iterm2' ]]; then
 
     echo -e "${bakgrn}[installed][iterm2]${txtrst}" ;
 

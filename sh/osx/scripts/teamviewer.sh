@@ -1,8 +1,8 @@
 #!/bin/sh
 
-TEAMVIEWER_IS_AVAILABLE="$(brew cask list | grep teamviewer 2>&1 >/dev/null)"
+TEAMVIEWER_IS_AVAILABLE="$(brew cask list | grep teamviewer)"
 
-if [[ ${TEAMVIEWER_IS_AVAILABLE} == '' ]]; then
+if [[ ${TEAMVIEWER_IS_AVAILABLE} == 'teamviewer' ]]; then
 
     echo -e "${bakgrn}[installed][teamviewer]${txtrst}" ;
 

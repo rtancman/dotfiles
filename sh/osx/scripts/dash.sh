@@ -1,8 +1,8 @@
 #!/bin/sh
 
-DASH_IS_AVAILABLE="$(brew cask list | grep dash 2>&1 >/dev/null)"
+DASH_IS_AVAILABLE="$(brew cask list | grep dash)"
 
-if [[ ${DASH_IS_AVAILABLE} == '' ]]; then
+if [[ ${DASH_IS_AVAILABLE} == 'dash' ]]; then
 
     echo -e "${bakgrn}[installed][dash]${txtrst}" ;
 

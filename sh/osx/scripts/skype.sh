@@ -1,8 +1,8 @@
 #!/bin/sh
 
-SKYPE_IS_AVAILABLE="$(brew cask list | grep skype 2>&1 >/dev/null)"
+SKYPE_IS_AVAILABLE="$(brew cask list | grep skype)"
 
-if [[ ${SKYPE_IS_AVAILABLE} == '' ]]; then
+if [[ ${SKYPE_IS_AVAILABLE} == 'skype' ]]; then
 
     echo -e "${bakgrn}[installed][skype]${txtrst}" ;
 

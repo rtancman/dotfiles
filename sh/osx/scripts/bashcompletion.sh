@@ -1,8 +1,8 @@
 #!/bin/sh
 
-BASHCOMPLETION_IS_AVAILABLE="$(brew list | grep bash-completion 2>&1 >/dev/null)"
+BASHCOMPLETION_IS_AVAILABLE="$(brew list | grep bash-completion)"
 
-if [[ ${BASHCOMPLETION_IS_AVAILABLE} == '' ]]; then
+if [[ ${BASHCOMPLETION_IS_AVAILABLE} == 'bash-completion' ]]; then
 
     echo -e "${bakgrn}[installed][bash-completion]${txtrst}" ;
 

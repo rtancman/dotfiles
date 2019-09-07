@@ -1,8 +1,8 @@
 #!/bin/sh
 
-FRANZ_IS_AVAILABLE="$(brew cask list | grep franz --version 2>&1 >/dev/null)"
+FRANZ_IS_AVAILABLE="$(brew cask list | grep franz)"
 
-if [[ ${FRANZ_IS_AVAILABLE} == '' ]]; then
+if [[ ${FRANZ_IS_AVAILABLE} == 'franz' ]]; then
 
     echo -e "${bakgrn}[installed][franz]${txtrst}" ;
 
