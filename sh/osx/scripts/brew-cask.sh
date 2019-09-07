@@ -1,6 +1,6 @@
 #!/bin/sh
 
-BREWCASKROOM_IS_AVAILABLE="$(brew cask --version 2>&1 >/dev/null)"
+BREWCASKROOM_IS_AVAILABLE="$(brew cask list 2>&1 >/dev/null)"
 
 if [[ ${BREWCASKROOM_IS_AVAILABLE} == '' ]]; then
 
