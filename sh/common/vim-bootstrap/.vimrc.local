@@ -34,3 +34,11 @@ nnoremap <leader>= :wincmd =<cr>
 " vmap <c-c> y:call system("xclip -i -selection clipboard", getreg("\""))<cr>:call system("xclip -i", getreg("\""))<cr>
 " nmap <c-v> :call setreg("\"",system("xclip -o -selection clipboard"))<cr>p")")")"))
 
+" yank to clipboard
+if has("clipboard")
+  set clipboard=unnamed " copy to the system clipboard
+
+  if has("unnamedplus") " X11 support
+    set clipboard+=unnamedplus
+  endif
+endif
