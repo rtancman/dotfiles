@@ -40,6 +40,7 @@ echo -e "${bakblu}[MacOSX][Install][Start]${txtrst}\n";
 . sh/osx/scripts/robomongo.sh;
 . sh/osx/scripts/wrk.sh;
 . sh/osx/scripts/vegeta.sh;
+. sh/osx/scripts/obs.sh;
 
 
 echo -e "\n${bakblu}[MacOSX][Install][Finish]${txtrst}";
