@@ -41,6 +41,7 @@ echo -e "${bakblu}[MacOSX][Install][Start]${txtrst}\n";
 . sh/osx/scripts/wrk.sh;
 . sh/osx/scripts/vegeta.sh;
 . sh/osx/scripts/obs.sh;
+. sh/osx/scripts/google-cloud-sdk.sh;
 
 
 echo -e "\n${bakblu}[MacOSX][Install][Finish]${txtrst}";
