@@ -5,6 +5,7 @@ echo -e "${bakblu}[MacOSX][Install][Start]${txtrst}\n";
 . sh/osx/scripts/brew.sh;
 . sh/osx/scripts/brew-cask.sh;
 . sh/osx/scripts/git.sh;
+#. sh/osx/scripts/gpg2.sh;
 . sh/osx/scripts/bashcompletion.sh;
 . sh/osx/scripts/svn.sh;
 . sh/osx/scripts/gitflow.sh;
@@ -42,6 +43,7 @@ echo -e "${bakblu}[MacOSX][Install][Start]${txtrst}\n";
 . sh/osx/scripts/vegeta.sh;
 . sh/osx/scripts/obs.sh;
 . sh/osx/scripts/google-cloud-sdk.sh;
+. sh/osx/scripts/rvm.sh;
 
 
 echo -e "\n${bakblu}[MacOSX][Install][Finish]${txtrst}";
