@@ -1,6 +1,6 @@
 #!/bin/sh
 
-GVM_IS_AVAILABLE="$(gvm --version 2>&1 >/dev/null)"
+GVM_IS_AVAILABLE="$(gvm version 2>&1 >/dev/null)"
 
 if [[ ${GVM_IS_AVAILABLE} == '' ]]; then
 
