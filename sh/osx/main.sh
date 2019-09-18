@@ -44,6 +44,7 @@ echo -e "${bakblu}[MacOSX][Install][Start]${txtrst}\n";
 . sh/osx/scripts/obs.sh;
 . sh/osx/scripts/google-cloud-sdk.sh;
 . sh/osx/scripts/rvm.sh;
+. sh/osx/scripts/pipenv.sh;
 
 
 echo -e "\n${bakblu}[MacOSX][Install][Finish]${txtrst}";
