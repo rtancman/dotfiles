@@ -47,6 +47,7 @@ echo -e "${bakblu}[MacOSX][Install][Start]${txtrst}\n";
 . sh/osx/scripts/pipenv.sh;
 . sh/osx/scripts/k9s.sh;
 . sh/osx/scripts/mongodb-compass.sh;
+. sh/osx/scripts/telnet.sh;
 
 
 echo -e "\n${bakblu}[MacOSX][Install][Finish]${txtrst}";
