@@ -48,6 +48,6 @@ echo -e "${bakblu}[MacOSX][Install][Start]${txtrst}\n";
 . sh/osx/scripts/k9s.sh;
 . sh/osx/scripts/mongodb-compass.sh;
 . sh/osx/scripts/telnet.sh;
-
+. sh/common/sdkman/scripts/sdkman.sh;
 
 echo -e "\n${bakblu}[MacOSX][Install][Finish]${txtrst}";
