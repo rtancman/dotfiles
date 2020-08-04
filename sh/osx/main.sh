@@ -50,5 +50,6 @@ echo -e "${bakblu}[MacOSX][Install][Start]${txtrst}\n";
 . sh/osx/scripts/telnet.sh;
 . sh/common/sdkman/scripts/sdkman.sh;
 . sh/osx/scripts/k8s-tools.sh;
+. sh/osx/scripts/r.sh;
 
 echo -e "\n${bakblu}[MacOSX][Install][Finish]${txtrst}";
