@@ -51,5 +51,6 @@ echo -e "${bakblu}[MacOSX][Install][Start]${txtrst}\n";
 . sh/common/sdkman/scripts/sdkman.sh;
 . sh/osx/scripts/k8s-tools.sh;
 . sh/osx/scripts/r.sh;
+. sh/osx/scripts/responsively.sh;
 
 echo -e "\n${bakblu}[MacOSX][Install][Finish]${txtrst}";
