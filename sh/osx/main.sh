@@ -52,5 +52,6 @@ echo -e "${bakblu}[MacOSX][Install][Start]${txtrst}\n";
 . sh/osx/scripts/k8s-tools.sh;
 . sh/osx/scripts/r.sh;
 . sh/osx/scripts/responsively.sh;
+. sh/osx/scripts/intellij_idea_ce.sh;
 
 echo -e "\n${bakblu}[MacOSX][Install][Finish]${txtrst}";
