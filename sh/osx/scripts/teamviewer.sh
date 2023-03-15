@@ -1,6 +1,6 @@
 #!/bin/sh
 
-TEAMVIEWER_IS_AVAILABLE="$(brew cask list | grep teamviewer)"
+TEAMVIEWER_IS_AVAILABLE="$(brew list --cask | grep teamviewer)"
 
 if [[ ${TEAMVIEWER_IS_AVAILABLE} == 'teamviewer' ]]; then
 
@@ -10,7 +10,7 @@ else
 
     echo -e "${bakcyn}[teamviewer] Start Install ${txtrst}";
 
-    brew cask install teamviewer
+    brew install teamviewer --cask
 
     echo -e "${bakgrn}[teamviewer] Finish Install ${txtrst}";
 

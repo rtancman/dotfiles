@@ -1,6 +1,6 @@
 #!/bin/sh
 
-DASH_IS_AVAILABLE="$(brew cask list | grep dash)"
+DASH_IS_AVAILABLE="$(brew list --cask | grep dash)"
 
 if [[ ${DASH_IS_AVAILABLE} == 'dash' ]]; then
 
@@ -10,7 +10,7 @@ else
 
     echo -e "${bakcyn}[dash] Start Install ${txtrst}";
 
-    brew cask install dash
+    brew install dash --cask
 
     echo -e "${bakgrn}[dash] Finish Install ${txtrst}";
 

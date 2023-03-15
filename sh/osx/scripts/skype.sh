@@ -1,6 +1,6 @@
 #!/bin/sh
 
-SKYPE_IS_AVAILABLE="$(brew cask list | grep skype)"
+SKYPE_IS_AVAILABLE="$(brew list --cask | grep skype)"
 
 if [[ ${SKYPE_IS_AVAILABLE} == 'skype' ]]; then
 
@@ -10,7 +10,7 @@ else
 
     echo -e "${bakcyn}[skype] Start Install ${txtrst}";
 
-    brew cask install skype
+    brew install skype --cask
 
     echo -e "${bakgrn}[skype] Finish Install ${txtrst}";
 

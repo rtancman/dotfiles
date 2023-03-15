@@ -10,7 +10,7 @@ else
 
     echo -e "${bakcyn}[virtualbox] Start Install ${txtrst}";
 
-    brew cask install virtualbox virtualbox-extension-pack
+    brew install virtualbox virtualbox-extension-pack --cask
 
     echo -e "${bakgrn}[virtualbox] Finish Install ${txtrst}";
 

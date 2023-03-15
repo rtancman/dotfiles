@@ -10,7 +10,7 @@ else
 
     echo -e "${bakcyn}[vscode] Start Install ${txtrst}";
 
-    brew cask install visual-studio-code
+    brew install visual-studio-code --cask
 
     echo -e "${bakgrn}[vscode] Finish Install ${txtrst}";
 

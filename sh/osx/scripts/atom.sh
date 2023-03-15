@@ -10,7 +10,7 @@ else
 
     echo -e "${bakcyn}[atom] Start Install ${txtrst}";
 
-    brew cask install atom
+    brew install atom --cask
 
     echo -e "${bakgrn}[atom] Finish Install ${txtrst}";
 

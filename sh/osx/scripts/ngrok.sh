@@ -10,7 +10,7 @@ else
 
     echo -e "${bakcyn}[ngrok] Start Install ${txtrst}";
 
-    brew cask install ngrok
+    brew install ngrok --cask
 
     echo -e "${bakgrn}[ngrok] Finish Install ${txtrst}";
 

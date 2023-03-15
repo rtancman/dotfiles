@@ -1,6 +1,6 @@
 #!/bin/sh
 
-SPOTIFY_IS_AVAILABLE="$(brew cask list | grep spotify)"
+SPOTIFY_IS_AVAILABLE="$(brew list --cask | grep spotify)"
 
 if [[ ${SPOTIFY_IS_AVAILABLE} == 'spotify' ]]; then
 
@@ -10,7 +10,7 @@ else
 
     echo -e "${bakcyn}[spotify] Start Install ${txtrst}";
 
-    brew cask install spotify
+    brew install spotify --cask
 
     echo -e "${bakgrn}[spotify] Finish Install ${txtrst}";
 

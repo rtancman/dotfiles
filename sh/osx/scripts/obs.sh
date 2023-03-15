@@ -1,6 +1,6 @@
 #!/bin/sh
 
-OBS_IS_AVAILABLE="$(brew cask list | grep obs)"
+OBS_IS_AVAILABLE="$(brew list --cask | grep obs)"
 
 if [[ ${OBS_IS_AVAILABLE} == 'obs' ]]; then
 
@@ -10,7 +10,7 @@ else
 
     echo -e "${bakcyn}[obs] Start Install ${txtrst}";
 
-    brew cask install obs
+    brew install obs --cask
 
     echo -e "${bakgrn}[obs] Finish Install ${txtrst}";
 

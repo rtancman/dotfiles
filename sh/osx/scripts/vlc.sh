@@ -10,7 +10,7 @@ else
 
     echo -e "${bakcyn}[vlc] Start Install ${txtrst}";
 
-    brew cask install vlc
+    brew install vlc --cask
 
     echo -e "${bakgrn}[vlc] Finish Install ${txtrst}";
 

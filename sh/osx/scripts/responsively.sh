@@ -1,7 +1,7 @@
 
 #!/bin/sh
 
-RESPONSIVELY_IS_AVAILABLE="$(brew cask list | grep responsively)"
+RESPONSIVELY_IS_AVAILABLE="$(brew list --cask | grep responsively)"
 
 if [[ ${RESPONSIVELY_IS_AVAILABLE} == 'responsively' ]]; then
 
@@ -11,7 +11,7 @@ else
 
     echo -e "${bakcyn}[responsively] Start Install ${txtrst}";
 
-    brew cask install responsively
+    brew install responsively --cask
 
     echo -e "${bakgrn}[responsively] Finish Install ${txtrst}";
 

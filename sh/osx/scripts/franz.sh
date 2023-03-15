@@ -1,6 +1,6 @@
 #!/bin/sh
 
-FRANZ_IS_AVAILABLE="$(brew cask list | grep franz)"
+FRANZ_IS_AVAILABLE="$(brew list --cask | grep franz)"
 
 if [[ ${FRANZ_IS_AVAILABLE} == 'franz' ]]; then
 
@@ -10,7 +10,7 @@ else
 
     echo -e "${bakcyn}[franz] Start Install ${txtrst}";
 
-    brew cask install franz
+    brew install franz --cask
 
     echo -e "${bakgrn}[franz] Finish Install ${txtrst}";
 

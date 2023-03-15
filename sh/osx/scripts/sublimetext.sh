@@ -10,7 +10,7 @@ else
 
     echo -e "${bakcyn}[sublime-text] Start Install ${txtrst}";
 
-    brew cask install sublime-text
+    brew install sublime-text --cask
 
     echo -e "${bakgrn}[sublime-text] Finish Install ${txtrst}";
 

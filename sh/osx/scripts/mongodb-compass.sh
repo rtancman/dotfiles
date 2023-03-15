@@ -1,6 +1,6 @@
 #!/bin/sh
 
-MONGO_COMPASS_IS_AVAILABLE="$(brew cask list | grep mongodb-compass)"
+MONGO_COMPASS_IS_AVAILABLE="$(brew list --cask | grep mongodb-compass)"
 
 if [[ ${MONGO_COMPASS_IS_AVAILABLE} == '' ]]; then
 
@@ -10,7 +10,7 @@ else
 
     echo -e "${bakcyn}[mongodb-compass] Start Install ${txtrst}";
 
-    brew cask install mongodb-compass
+    brew install mongodb-compass --cask
 
     echo -e "${bakgrn}[mongodb-compass] Finish Install ${txtrst}";
 

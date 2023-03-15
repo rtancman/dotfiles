@@ -10,7 +10,7 @@ else
 
     echo -e "${bakcyn}[google-chrome] Start Install ${txtrst}";
 
-    brew cask install google-chrome
+    brew install google-chrome --cask
 
     echo -e "${bakgrn}[google-chrome] Finish Install ${txtrst}";
 

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-ROBOMONGO_IS_AVAILABLE="$(brew cask list | grep robo-3t)"
+ROBOMONGO_IS_AVAILABLE="$(brew list --cask | grep robo-3t)"
 
 if [[ ${ROBOMONGO_IS_AVAILABLE} == 'robo-3t' ]]; then
 
@@ -10,7 +10,7 @@ else
 
     echo -e "${bakcyn}[robomongo] Start Install ${txtrst}";
 
-    brew cask install robo-3t
+    brew install robo-3t --cask
 
     echo -e "${bakgrn}[robomongo] Finish Install ${txtrst}";
 

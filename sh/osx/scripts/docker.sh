@@ -10,7 +10,7 @@ else
 
     echo -e "${bakcyn}[docker] Start Install ${txtrst}";
 
-    brew cask install docker
+    brew install docker --cask
 
     echo -e "${bakgrn}[docker] Finish Install ${txtrst}";
 

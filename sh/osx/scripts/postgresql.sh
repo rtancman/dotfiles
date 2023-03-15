@@ -10,12 +10,12 @@ else
     echo -e "${bakgrn}[postgresql] Finish Install ${txtrst}";
 fi
 
-PGADMIN_IS_AVAILABLE="$(brew cask list | grep pgadmin4 2>&1 >/dev/null)"
+PGADMIN_IS_AVAILABLE="$(brew list --cask | grep pgadmin4 2>&1 >/dev/null)"
 
 if [[ ${PGADMIN_IS_AVAILABLE} == '' ]]; then
     echo -e "${bakgrn}[installed][pgadmin4]${txtrst}" ;
 else
     echo -e "${bakcyn}[pgadmin4] Start Install ${txtrst}";
-    brew cask install pgadmin4
+    brew install pgadmin4 --cask
     echo -e "${bakgrn}[pgadmin4] Finish Install ${txtrst}";
 fi
