@@ -54,5 +54,6 @@ echo -e "${bakblu}[MacOSX][Install][Start]${txtrst}\n";
 . sh/osx/scripts/responsively.sh;
 . sh/osx/scripts/intellij_idea_ce.sh;
 . sh/osx/scripts/meld.sh;
+. sh/osx/scripts/postman.sh;
 
 echo -e "\n${bakblu}[MacOSX][Install][Finish]${txtrst}";
