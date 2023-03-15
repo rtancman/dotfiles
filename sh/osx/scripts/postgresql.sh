@@ -6,7 +6,7 @@ if [[ ${POSTGRESQL_IS_AVAILABLE} == '' ]]; then
     echo -e "${bakgrn}[installed][postgresql]${txtrst}" ;
 else
     echo -e "${bakcyn}[postgresql] Start Install ${txtrst}";
-    brew install postgresql
+    brew install postgresql@15
     echo -e "${bakgrn}[postgresql] Finish Install ${txtrst}";
 fi
 
