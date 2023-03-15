@@ -1,6 +1,6 @@
 #!/bin/sh
 
-GOOGLECHROME_IS_AVAILABLE="$(google-chrome --version 2>&1 >/dev/null)"
+GOOGLECHROME_IS_AVAILABLE="$(brew list --cask | grep google-chrome)"
 
 if [[ ${GOOGLECHROME_IS_AVAILABLE} == '' ]]; then
 
