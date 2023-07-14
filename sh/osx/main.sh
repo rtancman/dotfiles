@@ -57,5 +57,6 @@ echo -e "${bakblu}[MacOSX][Install][Start]${txtrst}\n";
 . sh/osx/scripts/postman.sh;
 . sh/osx/scripts/firefox.sh;
 . sh/osx/scripts/kustomize.sh;
+. sh/osx/scripts/rancher_desktop.sh;
 
 echo -e "\n${bakblu}[MacOSX][Install][Finish]${txtrst}";
