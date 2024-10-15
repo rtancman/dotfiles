@@ -23,6 +23,7 @@ code --install-extension FallenMax.mithril-emmet
 code --install-extension christian-kohler.path-intellisen
 code --install-extension cssho.vscode-svgviewer
 code --install-extension HookyQR.beautify
+code --install-extension burkeholland.simple-react-snippets
 # Java
 code --install-extension vscjava.vscode-java-debug
 code --install-extension vscjava.vscode-java-pack
