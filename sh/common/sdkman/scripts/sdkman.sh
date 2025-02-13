@@ -1,6 +1,6 @@
 #!/bin/sh
 
-SDKMAN_IS_AVAILABLE="$(sdk --version 2>&1 >/dev/null)"
+SDKMAN_IS_AVAILABLE="$(sdk version 2>&1 >/dev/null)"
 
 if [[ ${SDKMAN_IS_AVAILABLE} == '' ]]; then
 
