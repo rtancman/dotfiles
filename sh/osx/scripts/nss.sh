@@ -1,6 +1,6 @@
 #!/bin/sh
 
-NSS_IS_AVAILABLE="$(brew list | grep nss)"
+NSS_IS_AVAILABLE="$(brew list | grep nss | head -n1)"
 
 if [[ ${NSS_IS_AVAILABLE} == 'nss' ]]; then
 

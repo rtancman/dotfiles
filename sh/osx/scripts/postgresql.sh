@@ -1,8 +1,8 @@
 #!/bin/sh
 
-POSTGRESQL_IS_AVAILABLE="$(postgres --version 2>&1 >/dev/null)"
+POSTGRESQL_IS_AVAILABLE="$(brew list | grep postgresql)"
 
-if [[ ${POSTGRESQL_IS_AVAILABLE} == '' ]]; then
+if [[ ${POSTGRESQL_IS_AVAILABLE} == "postgresql*" ]]; then
     echo -e "${bakgrn}[installed][postgresql]${txtrst}" ;
 else
     echo -e "${bakcyn}[postgresql] Start Install ${txtrst}";
@@ -10,9 +10,9 @@ else
     echo -e "${bakgrn}[postgresql] Finish Install ${txtrst}";
 fi
 
-PGADMIN_IS_AVAILABLE="$(brew list --cask | grep pgadmin4 2>&1 >/dev/null)"
+PGADMIN_IS_AVAILABLE="$(brew list --cask | grep pgadmin4)"
 
-if [[ ${PGADMIN_IS_AVAILABLE} == '' ]]; then
+if [[ ${PGADMIN_IS_AVAILABLE} == 'pgadmin4' ]]; then
     echo -e "${bakgrn}[installed][pgadmin4]${txtrst}" ;
 else
     echo -e "${bakcyn}[pgadmin4] Start Install ${txtrst}";

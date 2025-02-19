@@ -1,6 +1,6 @@
 #!/bin/sh
 
-KUBECTL_IS_AVAILABLE="$(kubectl --version 2>&1 >/dev/null)"
+KUBECTL_IS_AVAILABLE="$(kubectl version 2>&1 >/dev/null)"
 
 if [[ ${KUBECTL_IS_AVAILABLE} == '' ]]; then
 

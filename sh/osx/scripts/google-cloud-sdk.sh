@@ -1,6 +1,6 @@
 #!/bin/sh
 
-GCPSDK_IS_AVAILABLE="$(gcloud --version 2>&1 >/dev/null)"
+GCPSDK_IS_AVAILABLE="$(gcloud version 2>&1 >/dev/null)"
 
 if [[ ${GCPSDK_IS_AVAILABLE} == '' ]]; then
 
