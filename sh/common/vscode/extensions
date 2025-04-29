@@ -24,9 +24,15 @@ code --install-extension christian-kohler.path-intellisen
 code --install-extension cssho.vscode-svgviewer
 code --install-extension HookyQR.beautify
 code --install-extension burkeholland.simple-react-snippets
+# golang
+code --install-extension golang.Go
 # Java
 code --install-extension vscjava.vscode-java-debug
 code --install-extension vscjava.vscode-java-pack
 code --install-extension vscjava.vscode-java-test
 code --install-extension redhat.java
 code --install-extension vscjava.vscode-maven
+# github
+code --install-extension GitHub.copilot
+code --install-extension GitHub.vscode-github-actions
+code --install-extension bierner.markdown-preview-github-styles
