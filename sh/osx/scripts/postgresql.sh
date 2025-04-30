@@ -2,7 +2,7 @@
 
 POSTGRESQL_IS_AVAILABLE="$(brew list | grep postgresql)"
 
-if [[ ${POSTGRESQL_IS_AVAILABLE} == "postgresql*" ]]; then
+if [[ ${POSTGRESQL_IS_AVAILABLE} == "postgresql@15" ]]; then
     echo -e "${bakgrn}[installed][postgresql]${txtrst}" ;
 else
     echo -e "${bakcyn}[postgresql] Start Install ${txtrst}";

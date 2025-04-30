@@ -15,5 +15,3 @@ else
     echo -e "${bakgrn}[rancher_desktop] Finish Install ${txtrst}";
 
 fi
-
-brew install colima
