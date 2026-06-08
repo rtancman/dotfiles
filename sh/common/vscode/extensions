@@ -36,3 +36,5 @@ code --install-extension vscjava.vscode-maven
 code --install-extension GitHub.copilot
 code --install-extension GitHub.vscode-github-actions
 code --install-extension bierner.markdown-preview-github-styles
+# tailwind
+code --install-extension bradlc.vscode-tailwindcss
