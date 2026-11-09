@@ -64,5 +64,7 @@ echo -e "${bakblu}[MacOSX][Install][Start]${txtrst}\n";
 . sh/osx/scripts/cursor.sh;
 . sh/osx/scripts/mkcert.sh;
 . sh/osx/scripts/nss.sh;
+. sh/osx/scripts/claude-code.sh;
+. sh/osx/scripts/lmstudio.sh;
 
 echo -e "\n${bakblu}[MacOSX][Install][Finish]${txtrst}";
